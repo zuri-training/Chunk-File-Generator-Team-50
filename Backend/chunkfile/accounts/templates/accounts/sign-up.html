@@ -1,0 +1,192 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+         
+        body {
+            height: 100vh;
+        }
+        
+        /* HEADER */
+        header{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 50px;
+            padding:0 10rem;
+        }
+        
+        .header-text{
+            display: flex;
+            justify-content: center;
+            font-weight: 400;
+        }
+        
+        
+        /* FORM */
+        .form-and-image-section {
+            display: flex;
+            gap: 100px;
+            justify-content: center;
+            margin-bottom: 77px;
+        
+        }
+        
+        .form-section {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin: 50px;
+        }
+        
+        .form-text {
+            font-weight: 400;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        label {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        input {
+            height: 3rem;
+            width: 22rem;
+            border-radius: 5px;
+            border: none;
+            background-color: #d9d9d9;
+        }
+        
+        /* FORM BUTTON */
+        button {
+            background-color: gray;
+            border: none;
+            border-radius: 5px;
+            height: 3rem;
+            width: 22rem;
+        
+            text-decoration: none;
+            font-size: large;
+            font-weight: 900;
+            color: white;
+        }
+        
+        .form-bottom-text p {
+            font-size: 0.95rem;
+        }
+        
+        /* IMAGE */
+        .image-section {
+            height: 31rem;
+            width: 40rem;
+            background-color: #d9d9d9;
+            margin-top: 60px;
+        }
+        
+        /* FOOTER */
+        footer {
+            background-color: #d9d9d9;
+            height: 5rem;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .footer-text {
+            justify-content: center;
+            align-self: center;
+        }
+        
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <div class="logo">
+            <h3>
+                CHUNKFILE
+            </h3>
+        </div>
+        <div class="main-header-text">
+            <h2 class="header-text">
+                Sign Up
+            </h2>
+        </div>
+        
+    </header>
+
+    <section class="form-and-image-section">
+        <div class="form-section">
+            <h3 class="form-text">
+                One account for everything split, and more
+            </h3>
+            <form action="" method="POST">
+                {% csrf_token %}
+                <label for="email">
+                   Username
+                </label>
+                    {{form.username}}
+                <label for="email">
+                    Email Address
+                </label>
+                    {{form.email}}
+                <label for="password">
+                    Password
+                </label>
+                    {{form.password1}}
+                <label for="Password">
+                    Re-enter Password
+                </label>
+                    {{form.password2}}
+                <input type="submit" class="btn-2" value="Create account">
+            </form>
+           
+
+            <div class="form-bottom-text">
+                <p>
+                    {% for message in messages %}
+                        {{message}}
+                    {% endfor %}
+                </p>
+                <p>
+                    <span>Already have an account? <a href="{% url 'accounts:login' %}">Log in</a> </span>
+                </p>
+                <p>
+                    By selecting create account, you agree to our Terms and  <br>
+                    have read and acknowledged our Global Privacy Statement
+                </p>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="#" alt="">
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer-text">
+            Invisible reCAPTCHA by Google Privacy Policy and Terms of Use
+        </p>
+    </footer>
+
+    <!--Script to add placeholder values to input fields-->
+    <script>
+        const place_h = document.getElementsByTagName('input');
+        place_h[1].placeholder = "ex. john_4454";
+        place_h[2].placeholder = "ex. john@doe.com";
+    </script>
+</body>
+</html>
