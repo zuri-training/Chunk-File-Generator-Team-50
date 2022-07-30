@@ -9,6 +9,11 @@ font-family: 'Inter', sans-serif; */
   box-sizing: border-box;
 }
 
+body {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
 .container {
   margin: 30px 100px;
 
@@ -49,6 +54,8 @@ nav {
 .hero-container {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  margin-top: 30px;
 }
 
 .hero-left {
@@ -78,18 +85,19 @@ nav {
 
 .section-title {
   font-family: 'DM Sans', sans-serif;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 
 .features-container,
-.why-container {
+.why-container, .how-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 100px;
 }
 
+/* features  */
 .features {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -98,7 +106,7 @@ nav {
   margin-top: 32px;
 }
 
-.feature-box{
+.feature-box {
   text-align: center;
   border: 1px solid gray;
   border-radius: 4px;
@@ -106,12 +114,98 @@ nav {
   font-family: 'DM Sans', sans-serif;
 }
 
-.feature-title{
+.feature-title {
   font-weight: bold;
   font-size: 32px;
 }
 
-.feature-desc{
- margin-top: 8px;
+.feature-desc {
+  margin-top: 8px;
   font-size: 20px;
+}
+
+/* why  */
+
+.why {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 30px;
+  row-gap: 50px;
+  margin-top: 36px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.why-reason {
+  display: flex;
+  flex-direction: column;
+}
+
+.why-head {
+  display: flex;
+  align-items: center;
+}
+
+.why-head img {
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  margin-right: 5px;
+}
+
+.why-title {
+  font-size: 32px;
+}
+
+.why-desc{
+  font-size: 18px;
+}
+
+/* how it works section */
+
+.used-section {
+  padding: 40px 0;
+  background-color: #EBECEE;
+  margin-top: 100px;
+}
+
+.used-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.users {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  /* margin: 0 30px; */
+}
+
+.user {
+  /* margin-right: 10px; */
+}
+
+
+
+/* how container  */
+
+.how-container{
+
+}
+
+.hows{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 30px;
+  margin-top: 36px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.how{
+  display: flex;
+  flex-direction: column;
+
 }
