@@ -1,0 +1,14 @@
+{% load static %}
+<div id="navbar">
+    <ul>
+        <li class="side-menu-open"><a href="{% url 'main:home' %}">ᑕᕼᑌᑎᛕᗴᗪ</a></li>
+        <li><a href="">Dashboard</a></li>
+        <li><a href="{% url 'main:features' %}">Our Services</a></li>
+        <li><a href="">Suggest new features</a></li>
+
+        <li><a href="{% url 'main:documentation' %}">Documentation</a></li>
+        <li><a href="{% url 'split_file:split_home' %}">Get Started</a></li>
+    </ul>
+</div>
+{% block content %}
+{% endblock %}
