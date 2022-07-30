@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@500&display=swap');
+
+/* font-family: 'DM Sans', sans-serif;
+font-family: 'Inter', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 30px 100px;
+
+}
+
+header {
+  /* padding: 30px 100px; */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.nav-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 14px;
+  border-radius: 2px;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+
+/* hero section  */
+.hero-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.hero-title {
+  font-size: 64px;
+
+}
+
+.hero-desc {
+  margin-top: 8px;
+  font-size: 20px;
+  padding-right: 50px;
+}
+
+.hero-btn {
+  margin-top: 52px;
+  padding: 16px 50px;
+  font-size: 30px;
+}
+
+.section-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 50px;
+}
+
+
+.features-container,
+.why-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.feature-box{
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 20px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.feature-title{
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.feature-desc{
+ margin-top: 8px;
+  font-size: 20px;
+}
