@@ -1,0 +1,31 @@
+#file::file-selector-button {
+    border: 2px solid #555555;
+    color: #555555;
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 70px;
+}
+
+#file::file-selector-button:hover {
+    background-color: #970404;
+}
+
+#file::-webkit-file-upload-button {
+    text-align: center;
+    border: 2px solid #555555;
+    color: #555555;
+    padding: 70px;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+#file::-webkit-file-upload-button:hover {
+    background-color: #970404;
+}
+
+#upload{
+    text-align: center;
+}
+.fa-file-csv {
+    font-size: 30px;
+}

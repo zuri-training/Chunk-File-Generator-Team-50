@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+{% load static %}
+{% block home%}
+
+<header class="w3-display-container w3-center">
+  <p>
+    <span><b>Welcome, {{request.user}}</b></span>
+    <a href="{% url 'accounts:logout' %}" class="w3-button w3-grey w3-border-radius">Log out</a>
+  </p>
+  <div class="w3-padding-64 w3-white">
+    <div class="w3-row-padding">
+      <div class="w3-col l8 m6">
+        <h1 class="w3-jumbo"><b>chunked</b></h1>
+        <p>
+          <span class="w3-xlarge">Split files anytime and anywhere for <b>FREE!</b> </span> Chunked Files is an online platform that allows individuals to upload large CSV or JSON files and split the dataset in the uploaded CSV or JSON file into multiple files.
+        </p>
+      </div>
+      
+      <div class="w3-col l4 m6">
+        <h1>We handle file splitting...</h1>
+        <img
+          src="{% static '/images/split.jpg/' %}"
+          class="w3-image w3-right w3-hide-small w3-margin-bottom "
+          width="250"
+          height="300"
+        />
+        <h1>...and file conversion</h1>
+        <img
+          src="{% static '/images/convert.png/' %}"
+          class="w3-image w3-right w3-hide-small w3-round"
+          width="220"
+          height="300"
+        />
+        
+      </div>
+    </div>
+  </div>
+  <div class="w3-padding-64 w3-light-grey">
+    <div class="w3-row-padding">
+      <div class="w3-col l4 m6">
+        <h1>Choose a tool and upload a file</h1>
+        <img
+          class="w3-image w3-round-large w3-hide-small w3-grayscale"
+          src="{% static '/images/up.jpg/' %}"
+          alt="App"
+          width="335"
+          height="471"
+        />
+        <h1>Download the output file for free</h1>
+        <img
+        class="w3-image w3-round-large w3-hide-small w3-grayscale"
+        src="{% static '/images/down.webp/' %}"
+        alt="Download"
+        width="335"
+        height="471"
+      />
+      </div>
+      <div class="w3-col l8 m6">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Got files?</b></h1>
+        <p>
+          <span class="w3-xlarge">We got tools for you to handle them</span>
+          <ul>
+            <li>Split large CSV or JSON files and download on the go; Or come back later to download 😃 </li>
+            <li>Compress large files into zip and also extract zip files</li>
+            <li>Convert from CSV to JSON and vice versa .... we also have more file formats </li>
+            <p>Check out our complete services <a href="" onclick="document.getElementById('download').style.display='block'">Here</a>  </p>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Features Section -->
+<div class="w3-container w3-padding-64 w3-dark-grey w3-center">
+  <h1 class="w3-jumbo"><b>Features</b></h1>
+  <p>This app is just so lorem ipsum.</p>
+
+  <div class="w3-row" style="margin-top:64px">
+    <div class="w3-col s3">
+      <i class="fa fa-bolt w3-text-orange w3-jumbo"></i>
+      <p>Fast</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-heart w3-text-red w3-jumbo"></i>
+      <p>Loved</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-camera w3-text-yellow w3-jumbo"></i>
+      <p>Clarity</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-battery-full w3-text-green w3-jumbo"></i>
+      <p>Power</p>
+    </div>
+  </div>
+
+  <div class="w3-row" style="margin-top:64px">
+    <div class="w3-col s3">
+      <i class="fa fa-diamond w3-text-white w3-jumbo"></i>
+      <p>Sharp</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-cloud w3-text-blue w3-jumbo"></i>
+      <p>Cloud</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-globe w3-text-amber w3-jumbo"></i>
+      <p>Global</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-hdd-o w3-text-cyan w3-jumbo"></i>
+      <p>Storage</p>
+    </div>
+  </div>
+  
+  <div class="w3-row" style="margin-top:64px">
+    <div class="w3-col s3">
+      <i class="fa fa-user w3-text-sand w3-jumbo"></i>
+      <p>Safe</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-shield w3-text-orange w3-jumbo"></i>
+      <p>Stabile</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-wifi w3-text-grey w3-jumbo"></i>
+      <p>Connected</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-image w3-text-pink w3-jumbo"></i>
+      <p>HD</p>
+    </div>
+  </div>
+</div>
+  <p class="w3-padding-64">
+    <h3>Why don't you dive right in</h3>
+    <a href="{% url 'accounts:login' %}" class="w3-button w3-aqua">Get Started</a>
+  </p>
+</header>
+  {% endblock home %}
+  

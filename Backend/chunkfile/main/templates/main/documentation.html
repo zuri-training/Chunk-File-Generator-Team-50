@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block content %}
+
+   
+<h3>Project Name: 
+Chunk Files</h3>
+<h3>Description of Project:</h3>
+<i>Chunked Files is an online platform that allows individuals to upload large CSV or JSON files and split the dataset in the uploaded CSV or JSON file into multiple files.</i>
+
+<h1>Visualization of project description below:</h1>
+
+<div>
+<h3>Key Terminologies:</h3>
+CSV: A (comma-separated values) file is a simple text file in which information is separated by commas. A CSV file is a plain text file that can be opened in a variety of programs. CSV files are most commonly encountered in spreadsheets and databases. You can use a CSV file to move data between programs that aren't ordinarily able to exchange data. 
+</div>
+<div>
+  JSON: A (JavaScript Object Notation) file is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of attribute–value pairs and arrays (or other serializable values). It is a common data format with diverse uses in electronic data interchange, including that of web applications with servers. 
+</div>
+
+
+
+<h5>Problem Statement:</h5>
+<i>Image below shows one of the problems a data analyst encountered when working with very large files</i>
+<div>
+  When data analysts or normal individuals want to upload large files of about 3gb or more into certain platforms, it takes too long to complete or the platform may crash as it can’t process that huge file all at once. A good example is a gmail attachment which has a size limit of 25mb, therefore in order to bypass restrictions and send a file of about 500mb to somebody, the individual will have to manually copy and paste data from the main singular file into 20 files of about 25 mb each and send them individually to the recipient.
+ <p>
+   This presents a huge challenge as it will be very time consuming and cumbersome to perform such an operation. Only if there was a platform that can automatically split the files to the required size within seconds?
+ </p>
+   <div>
+     <h5>Solution Statement</h5>
+<p>Fortunately, there are programming languages and platforms that can help automate the splitting of large CSV or JSON files.</p>
+
+<p>With our web application called Chunk Files, manually copying data and splitting them into separate files is now a thing of the past. All you have to do is:</p>
+<ol>
+  <li>Step 1: Select the file format that you want eg. (.TXT, .XLS, .CSV, .JSON, e.tc)</li>
+<li>Step 2: Click on the “Upload File” button and select the desired file from your device or fill in the web link to where the file is located in the input box provided</li>
+<li>Step 3: Select the size and dimensions that you want each file to have (Optional)</li>
+<li>Step 4: Click on the “Split File” button and wait for the operation to finish and display the various files.</li>
+<li>Step 5: Click on the “Download” button or click on “Save file for later” which will allow you to come back later to download even after your session expired or you log out completely. </li>
+</ol>
+
+   </div>
+</div>
+
+
+{% endblock %}
