@@ -1,12 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
-{% block home%}
+{% block home %}
 
 <header class="w3-display-container w3-center">
-  <p>
-    <span><b>Welcome, {{request.user}}</b></span>
-    <a href="{% url 'accounts:logout' %}" class="w3-button w3-grey w3-border-radius">Log out</a>
-  </p>
   <div class="w3-padding-64 w3-white">
     <div class="w3-row-padding">
       <div class="w3-col l8 m6">
@@ -66,13 +62,16 @@
             <p>Check out our complete services <a href="" onclick="document.getElementById('download').style.display='block'">Here</a>  </p>
           </ul>
         </p>
+
+        <button class="w3-xxxlarge w3-button w3-black"><a href="{% url 'split_file:split_home' %}">Split Files</a> </button>
       </div>
     </div>
   </div>
+
   <!-- Features Section -->
 <div class="w3-container w3-padding-64 w3-dark-grey w3-center">
-  <h1 class="w3-jumbo"><b>Features</b></h1>
-  <p>This app is just so lorem ipsum.</p>
+  <h1 class="w3-jumbo"><b>Qualities</b></h1>
+  <p>This is a temporary space-filler</p>
 
   <div class="w3-row" style="margin-top:64px">
     <div class="w3-col s3">

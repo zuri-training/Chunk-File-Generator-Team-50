@@ -183,37 +183,13 @@ label:hover ~ input[type=password] {
 
 /*coming soon page styling*/
 .bgimg {
-  background-image: url('https://drive.google.com/file/d/1DrEBBMIr-9y0WX15NXdHY5McHf8b9kpC/view?usp=sharing');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 50%;
+  width: 50%;
 }
 
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 16px;
-}
-
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
-
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.topleft{
   text-align: center;
-}
-
-hr {
-  margin: auto;
-  width: 40%;
+  color: red;
 }

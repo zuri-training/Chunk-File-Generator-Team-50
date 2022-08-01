@@ -1,24 +1,11 @@
 {% extends 'base.html' %}
 {% load static %}
 
-<style>
-  body, html {
-    height: 100%;
-    margin: 0;
-  }
-</style>
 {% block content %}
-<div class="bgimg">
-  <div class="topleft">
-    <p>Logo</p>
-  </div>
-  <div class="middle">
-    <h1>COMING SOON</h1>
-    <hr>
-    <p id="demo" style="font-size:30px"></p>
-  </div>
-  <div class="bottomleft">
-    <p>Some text</p>
-  </div>
+
+<div class="topleft">
+  <h1>We're currently working on this page 🤔</h1>
+</div>
+<img src="{% static 'images/comnsoon.png' %}" class="bgimg">
 </div>
 {% endblock %}
