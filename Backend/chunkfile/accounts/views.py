@@ -1,4 +1,3 @@
-from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm 
 from .forms import CreateUserForm
@@ -6,7 +5,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 
 
-
+    #login user view
 def loginPage(request):
     if request.user.is_authenticated:
         return redirect('main:home')
@@ -24,10 +23,12 @@ def loginPage(request):
                 
         return render(request, 'accounts/login.html')
     
+    #log-out view
 def logoutUser(request):
     logout(request)
     return redirect('accounts:login')
 
+    #register-user view
 def registerPage(request):
     if request.user.is_authenticated:
         return redirect('main:home')

@@ -23,20 +23,19 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="{% url 'main:home' %}" class="w3-bar-item w3-button w3-padding-large w3-white"></a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a>
-    
+    <a href="{% url 'main:home' %}" class="w3-bar-item w3-button w3-padding-large w3-white">ᑕᕼᑌᑎᛕᗴᗪ</a>
+    <a href="{% url 'split_file:split_home' %}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Split</a>
+    <a href="{% url 'main:features' %}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Our features</a>
+    <a href="{% url 'main:documentation' %}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Documentation</a>
+    <span><b class='fa fa-user w3-button w3-right'>{{request.user}}</b></span>
     <a href="{% url 'accounts:logout' %}" class="w3-right w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Log out</a>
-    <span><b class='fa fa-user w3-bar-item w3-right'>{{request.user}}</b></span>
 </div>
 {% block content %}
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
     <a href="{% url 'main:home' %}" class="w3-bar-item w3-button w3-padding-large">ᑕᕼᑌᑎᛕᗴᗪ</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="{% url 'split_file:split_home' %}" class="w3-bar-item w3-button w3-padding-large">Split</a>
+    <a href="{% url 'main:features' %}" class="w3-bar-item w3-button w3-padding-large">Suggest New Feature</a>
     <a href="{% url 'main:documentation' %}" class="w3-bar-item w3-button w3-padding-large">Documentation</a>
       <span><b class='fa fa-user'>{{request.user}}</b></span>
       <a href="{% url 'accounts:logout' %}" class="w3-button w3-grey w3-border-radius">Log out</a>
@@ -56,9 +55,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       <h5 class="w3-padding-32 w3-jumbo">
         Split csv files
       </h5>
-        <a href="{% url 'split_file:split_csv' %}" class="w3-button w3-padding-32 w3-grey w3-center w3-hover-red">
-          Start splitting
-        </a>
+      <a href="{% url 'split_file:split_csv' %}" class="w3-button w3-padding-32 w3-grey w3-center w3-hover-red">
+        Start splitting
+      </a>
     </div>
 
     <div class="w3-third w3-center">
