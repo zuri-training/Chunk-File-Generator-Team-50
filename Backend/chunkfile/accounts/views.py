@@ -23,6 +23,7 @@ def loginPage(request):
                 messages.info(request, "Password or email is incorrect")
                 
         return render(request, 'accounts/login.html')
+    
 def logoutUser(request):
     logout(request)
     return redirect('accounts:login')
