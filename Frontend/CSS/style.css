@@ -90,7 +90,8 @@ nav {
 
 
 .features-container,
-.why-container, .how-container {
+.why-container,
+.how-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,7 +157,7 @@ nav {
   font-size: 32px;
 }
 
-.why-desc{
+.why-desc {
   font-size: 18px;
 }
 
@@ -192,11 +193,9 @@ nav {
 
 /* how container  */
 
-.how-container{
+.how-container {}
 
-}
-
-.hows{
+.hows {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   column-gap: 30px;
@@ -204,8 +203,77 @@ nav {
   font-family: 'DM Sans', sans-serif;
 }
 
-.how{
+.how {
   display: flex;
   flex-direction: column;
 
+}
+
+
+
+
+
+
+/* footer */
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  font-family: 'DM Sans', sans-serif;
+  color: #575757;
+
+  /* align-items: center; */
+  padding: 46px 100px;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.first h2 {
+  font-size: 32px;
+  color: black;
+}
+
+.first p{
+  margin-top: 24px;
+  margin-bottom: 14px;
+}
+
+.tagline{
+  font-size: 10px;
+  color: red;
+
+}
+
+.first .social{
+  display:  flex;
+}
+
+.first .social img{
+margin-right: 5px
+}
+
+.column {
+  margin-right: 70px;
+  max-width: 290px;
+}
+
+.column-heading {
+  font-size: 32px;
+  margin-bottom: 16px;
+  /* color: #575757; */
+}
+
+.column p {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
 }
