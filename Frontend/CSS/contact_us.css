@@ -1,0 +1,38 @@
+/* FORM STYLES */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+.container {
+  margin: auto;
+  width: 25%;
+font-family: 'DM Sans', sans-serif;
+}
+h1 {
+  text-align: center;
+  font-weight: 700;
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  background: transparent;
+  border: 2px solid grey;
+  resize: none;
+  color: white;
+}
+.btn {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    width: 150px;
+    height: 30px; 
+    background: #3f3f3f;
+    color: #ffffff;
+}
