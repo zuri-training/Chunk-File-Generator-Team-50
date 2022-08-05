@@ -19,14 +19,13 @@ body {
 }
 
 header {
-  /* padding: 30px 100px; */
+  padding: 16px 100px;
 }
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 16px 100px;
 }
 
 .logo-text {
@@ -39,6 +38,18 @@ nav {
   display: flex;
   flex-direction: row;
   gap: 32px;
+}
+
+.bars {
+  display: none;
+  height: 48px;
+  width: 48px;
+}
+
+.bars img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
 .btn {
@@ -187,7 +198,7 @@ nav {
   font-size: 18px;
 }
 
-/* how it works section */
+/*usedBY section */
 
 .used-section {
   padding: 40px 0;
@@ -449,7 +460,147 @@ nav {
 }
 
 
+@media only screen and (max-device-width: 480px) {
+  body {
+    /* background-color: red; */
+    max-width: 400px;
+  }
 
-@media screen {
+  header {
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.2);
+    padding: 16px 20px;
+
+  }
+
+
+  .nav-btn {
+    display: none;
+  }
+
+  .bars {
+    display: block;
+  }
+
+  .container {
+    margin: 0px 20px;
+  }
+
+  .hero-container {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin-top: 58px;
+    text-align: center;
+    gap: 48px;
+    margin-bottom: 43px;
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    color: #575757;
+  }
+
+  .hero-title {
+    font-size: 36px;
+    line-height: 43px
+  }
+
+  .hero-desc {
+    margin-top: 8px;
+    font-size: 17px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .hero-btn {
+    margin-top: 32px;
+    padding: 16px 72px;
+    font-size: 15px;
+    align-self: center;
+  }
+
+  .hero-right img {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 25px;
+  }
+
+  .features {
+    /* width: 100%; */
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  .feature-title {
+    font-size: 21px;
+  }
+
+
+
+  .why-container {
+    margin-top: 71px;
+  }
+
+  .why {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    row-gap: 8px;
+    margin-top: 24px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .why-reason {
+    padding: 16px 10px;
+  }
+
+  .why-head {
+    justify-content: center;
+  }
+
+  .why-head img {
+    height: 20px;
+    width: 20px;
+    border: none;
+    margin-right: 12px;
+  }
+
+  .why-title {
+    font-size: 21px;
+  }
+
+
+  .why-desc {
+    font-size: 15px;
+  }
+
+  .used-section {
+    padding: 40px 0;
+    background-color: #EBECEE;
+    margin-top: 100px;
+  }
   
+  .used-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .users {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    /* margin: 0 30px; */
+  }
+
+
+
 }
