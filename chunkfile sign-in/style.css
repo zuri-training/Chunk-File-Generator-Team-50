@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&family=DM+Sans:wght@700&family=Dancing+Script:wght@700&family=Edu+VIC+WA+NT+Beginner:wght@400;700&family=Lexend+Deca&family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&family=Public+Sans:wght@100&family=Red+Hat+Display:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&family=DM+Sans:wght@400;700&family=Dancing+Script:wght@700&family=Edu+VIC+WA+NT+Beginner:wght@400;700&family=Lexend+Deca&family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&family=Public+Sans:wght@100&family=Red+Hat+Display:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    gap: 120px;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.sign-in-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.header-text{
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 5px;
+    display: flex;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 900;
+}
+
+.header-sub-text {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+}
+
+section {
+    display: flex;
+    gap: 100px;
+
+}
+
+
+/* IMAGE */
+.img-and-logo {
+    height: 100vh;
+    width: 30rem;
+    background-color: #E7CEF0;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.img {
+    height:50vh;
+    width: 35rem;
+}
+
+/* FORM */
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 30px 50px;
+    width: fit-content;
+}
+
+.form-text {
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 2.5rem;
+    width: 27rem;
+    border-radius: 5px;
+    border: 1px solid rgb(151, 145, 145);
+    background-color: white;
+}
+
+
+::placeholder {
+    padding-left: 10px;
+}
+
+.forgotten-password {
+    display: flex;
+    justify-content: right;
+    text-decoration: none;
+    color: black;
+    /* padding-right: 12px; */
+    font-family: 'DM Sans', sans-serif;
+    margin-top: 10px;
+
+}
+
+/* FORM BUTTON */
+
+button {
+    background-color: #30638E;
+    border: none;
+    border-radius: 5px;
+    height: 3rem;
+    width: 27rem;
+    font-size: large;
+    font-weight: 900;
+    color: white;
+}
+
+.form-bottom-text {
+    font-size: 1rem;
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 900;
+    justify-content: center;
+}
+
+.line {
+    border-top: 1px solid black;
+    width: 50px;
+}
+
+.cont{
+    font-weight: 700;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.reg {
+    text-decoration: none;
+    color: #30638E;
+    font-weight: 900;
+    margin-left: 3px;
+}
+
+
+.icons{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.icn {
+    height: 35px;
+    width: 35px;
+}
