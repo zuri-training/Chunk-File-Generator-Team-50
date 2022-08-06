@@ -39,6 +39,9 @@ main {
     margin: auto;
     margin-bottom: 18em;
 }
+br {
+    display: none;
+}
 .accordion-container .question {
     padding: 1.8em 0 0.3em 0;
     cursor: pointer;
@@ -81,6 +84,12 @@ main {
     }
     main {
         width: 92%;
+    }
+    br {
+        display: block;
+    }
+    .mobile-footer {
+        
     }
     
 }
