@@ -47,7 +47,7 @@
     }
 
     .nav-logo {
-        padding: 2em 2em 1em 1em;
+        padding: 2em 1.2em 1em 1em;
         display: flex;
         justify-content: space-between;
     }
@@ -90,9 +90,29 @@
         background-repeat: no-repeat;
         background-size: 12px;
         padding-left: 1.5em;
+    
+    }
+    ::placeholder {
+        color: #b9bdc4;
+    }
+    /* Internet Explorer */
+    :-ms-input-placeholder { 
+        color: #b9bdc4;
+    }
+    /* Microsoft Edge */
+    ::-ms-input-placeholder {
+        color: #b9bdc4;
     }
 
     /* Large Screens styling */
+    @media screen and (min-width: 600px) {
+        img {
+            width: 150px;
+            height: 40px;
+
+        }
+
+    }
     @media screen and (min-width: 840px) {
         #burger {
             display: none;
@@ -145,14 +165,7 @@
 
     }
 
-    @media screen and (min-width: 600px) {
-        img {
-            width: 150px;
-            height: 40px;
 
-        }
-
-    }
 </style>
 
 <body>
@@ -167,6 +180,7 @@
             <div class="dropdown">
                 <form>
                     <input type="search" name="" id="" placeholder='search'>
+                    
                 </form>
             </div>
             <div class="dropdown">
