@@ -46,8 +46,9 @@ header {
   z-index: 50;
   height: 88px;
   width: 100%;
-  background-color: var(--powderblue);
+  background-color: var(--white);
   align-items: center;
+  box-shadow: 0 10px 15px -8px rgb(189, 186, 186);
 }
 
 /* The Logo */
@@ -84,7 +85,7 @@ header {
   justify-content: flex-start;
   width: 228px;
   height: 44px;
-  background: #ffffff;
+  background-color: rgb(238, 241, 250);
   border-radius: 8px;
   order: 2;
 }
@@ -103,6 +104,7 @@ input[name="search-bar"] {
   height: inherit;
   text-shadow: none;
   border-radius: 8px;
+  background-color: rgb(238, 241, 250);
 }
 
 /* The Navigation Bar */
