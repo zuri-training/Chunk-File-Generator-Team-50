@@ -59,16 +59,16 @@ nav {
 }
 
 .sign-in {
-  background-color: #2211BB;
+  background-color: rgb(59, 91, 177);
   border: none;
   color: white;
   font-size: 32px;
 }
 
 .sign-up {
-  border: 1px solid #2211BB;
+  border: 1px solid rgb(59, 91, 177);
   font-size: 32px;
-  color: #2211BB;
+  color: rgb(59, 91, 177);
 }
 
 /* hero section  */
@@ -110,13 +110,13 @@ nav {
   border: none;
   color: #ffffff;
   border-radius: 4px;
-  background-color: #2211BB;
+  background-color: rgb(59, 91, 177);
 }
 
 .section-title {
   font-family: 'DM Sans', sans-serif;
   font-size: 40px;
-  color: #2211BB;
+  color: rgb(59, 91, 177);
 }
 
 
@@ -185,7 +185,7 @@ nav {
 .why-head img {
   height: 30px;
   width: 30px;
-  background-color: blue;
+  background-color: rgb(59, 91, 177);
   border: none;
   margin-right: 12px;
 }
@@ -257,8 +257,8 @@ nav {
   align-items: center;
   justify-content: center;
   outline: none;
-  color: #2211BB;
-  border: 3px solid #2211BB;
+  color: rgb(59, 91, 177);
+  border: 3px solid rgb(59, 91, 177);
   border-radius: 100px;
 }
 
@@ -345,7 +345,7 @@ nav {
 .contact-right h2 {
   font-size: 45px;
   margin-bottom: 8px;
-  color: #2211BB;
+  color: rgb(59, 91, 177);
 }
 
 .contact-right p {
@@ -380,7 +380,7 @@ nav {
 .contact-form button {
   color: white;
   font-size: 16px;
-  background-color: #2211BB;
+  background-color: rgb(59, 91, 177);
   padding: 16px 53px;
   border: none;
   border-radius: 4px;
@@ -393,7 +393,7 @@ nav {
 
 /* footer */
 .footer-container {
-  background-color: #2211BB;
+  background-color: rgb(59, 91, 177);
   display: flex;
   flex-direction: column;
   font-family: 'DM Sans', sans-serif;
