@@ -1,4 +1,7 @@
 /* footer */
+*, html {
+  margin: 0 0;
+}
 .footer-container {
   background-color: rgb(59, 91, 177);
   display: flex;
@@ -8,6 +11,11 @@
 
   /* align-items: center; */
   padding: 46px 100px;
+}
+footer {
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .footer-top {

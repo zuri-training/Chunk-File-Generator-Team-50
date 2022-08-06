@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>nav</title>
     <!-- font awesome links -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../CSS/nav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -15,204 +15,52 @@
 </head>
 <!-- CSS Internal Styling -->
 <!-- Please give yor pages enough top-margin cauuse nav position is fixed -->
-<style>
-    *,
-    ::before,
-    ::after {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    *,
-    nav {
-        font-family: 'DM Sans', sans-serif;
-
-    }
-
-    nav {
-        box-shadow: 0px 3px 5px 0px rgba(125, 125, 125, 0.3);
-        -webkit-box-shadow: 0px 3px 5px 0px rgba(125, 125, 125, 0.3);
-        width: 100%;
-        position: fixed;
-        top: 0;
-
-
-    }
-
-    img {
-        width: 130px;
-        height: 40px;
-
-    }
-
-    .nav-logo {
-        padding: 2em 1.2em 1em 1em;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .dropdown {
-        display: none;
-
-    }
-
-    .active {
-        display: block;
-    }
-
-    nav ul li {
-        list-style-type: none;
-    }
-
-    nav a {
-        text-decoration: none;
-        display: block;
-        padding: 1em 0;
-        text-align: center;
-        color: black;
-    }
-
-    #burger {
-        cursor: pointer;
-    }
-
-    form {
-        padding: 0.3em;
-        text-align: center;
-    }
-
-    input {
-        height: 30px;
-        border-radius: 7px;
-        background-image: url(/Frontend/ASSETS/magnifying-glass-solid.svg);
-        background-position: 2%;
-        background-repeat: no-repeat;
-        background-size: 12px;
-        padding-left: 1.5em;
-    
-    }
-    ::placeholder {
-        color: #b9bdc4;
-    }
-    /* Internet Explorer */
-    :-ms-input-placeholder { 
-        color: #b9bdc4;
-    }
-    /* Microsoft Edge */
-    ::-ms-input-placeholder {
-        color: #b9bdc4;
-    }
-
-    /* Large Screens styling */
-    @media screen and (min-width: 600px) {
-        img {
-            width: 150px;
-            height: 40px;
-
-        }
-
-    }
-    @media screen and (min-width: 840px) {
-        #burger {
-            display: none;
-        }
-
-        .nav-container {
-            padding: 0.4em 2em;
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .dropdown {
-            align-self: center;
-            display: flex;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        nav li {
-            margin-left: 1em;
-        }
-
-        input {
-            width: 300px;
-        }
-
-        .nav-logo {
-            padding: 0em 0em 0em 0em;
-        }
-
-        nav {
-            padding-bottom: 0em;
-        }
-
-        nav a {
-            padding: 0;
-        }
-
-        .nav-item {
-            margin-left: 2em;
-        }
 
 
 
-
-
-
-    }
-
-
-</style>
-
-<body>
-    <nav>
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="/Frontend/ASSETS/mainlogo.jpg" alt="">
-                <div id="burger">
-                    <h2><i class="fa-solid fa-bars"></i></h2>
-                </div>
-            </div>
-            <div class="dropdown">
-                <form>
-                    <input type="search" name="" id="" placeholder='search'>
-                    
-                </form>
-            </div>
-            <div class="dropdown">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Tools</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#" class="nav-item"><i class="fa-solid fa-user"></i></a></li>
-                </ul>
+<nav>
+    <div class="nav-container">
+        <div class="nav-logo">
+            <img src="../ASSETS/header-logo.svg" alt="">
+            <div id="burger">
+                <h2><i class="fa-solid fa-bars"></i></h2>
             </div>
         </div>
-    </nav>
-    <!-- JavaScript -->
-    <script>
-        const burger = document.getElementById('burger');
-        let navs = document.querySelectorAll('.dropdown')
-        console.log(navs);
+        <div id="links" class="dropdown">
+            <ul class="navbar-nav">
+                <li><a href="#" class="links active">Home</a></li>
+                <li><a href="#" class="links">Tools</a></li>
+                <li><a href="#" class="links">About</a></li>
+                <li><a href="#" class="links">Contact Us</a></li>
+
+            </ul>
+        </div>
+
+        <!-- rr -->
+        <div id="flex" class="dropdown">
+            <form>
+                <input type="search" name="" id="" placeholder='Search'>
+            </form>
+            <ul>
+                <li><a href="#"><i class="fa-regular fa-bell" style="color: rgb(59, 91, 177);"></i></a></li>
+                <!-- profile -->
+                <li><a href="#" class="profile">
+                        <!--profile-img added here -->
+                        <span class="bubble">8</span>
+                    </a></li>
+                <!-- <i class="fa-solid fa-user"></i> -->
+            </ul>
+
+        </div>
+        <div class="dropdown">
 
 
-        burger.addEventListener('click', function () {
-            if (navs[0].classList.contains('active') && navs[1].classList.contains('active')) {
-                navs[0].classList.remove('active');
-                navs[1].classList.remove('active');
-            }
-            else {
-                navs[0].classList.add('active');
-                navs[1].classList.add('active');
-            }
-        })
+            <!-- rgb(59, 91, 177) -->
+        </div>
+    </div>
+</nav>
+<!-- JavaScript -->
+<script src="../JAVASCRIPT/nav.js"></script>
 
-    </script>
-</body>
 
 </html>
