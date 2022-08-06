@@ -41,7 +41,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  position: fixed;
   top: 0;
   z-index: 50;
   height: 88px;
@@ -328,7 +327,6 @@ main > h1 {
   padding: 25px;
   /* min-height: 247px; */
   width: 100%;
-  background-color: var(--utility-cont);
 }
 
 .split-cont > a {
@@ -340,13 +338,13 @@ main > h1 {
   height: 159px;
   background-color: var(--white);
   background: #ffffff;
-  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
-  border: 3px solid var(--peachblue);
+  border: 3px solid rgb(217, 217, 217);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
 }
 
 .split1 {
@@ -358,6 +356,24 @@ main > h1 {
   padding: 5px;
 }
 
+.split1-first {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: rgb(1, 99, 224);
+  color: white;
+  padding: 5px;
+}
+
+.split1-second {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: rgb(245, 152, 76);
+  color: white;
+  padding: 5px;
+}
+
 .split2 {
   width: 100px;
   height: 60px;
@@ -365,8 +381,8 @@ main > h1 {
   /* background-color: yellowgreen; */
 }
 
-.split_merge {
-  margin-bottom: 80px;
+#split-merge {
+  width: 100%;
 }
 
 .convert1 {
@@ -381,13 +397,13 @@ main > h1 {
   height: 159px;
   background-color: var(--white);
   background: #ffffff;
-  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
-  border: 3px solid var(--peachblue);
+  border: 3px solid rgb(217, 217, 217);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
 }
 
 /* The Video Container */
