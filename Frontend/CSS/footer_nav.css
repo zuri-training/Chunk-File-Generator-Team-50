@@ -61,6 +61,7 @@ h2 {
   }
   .footer-container {
     padding: 2em 0 4em 0;
+    font-size: 1.6rem;
     
   }
   .mobile-flex {
@@ -88,6 +89,10 @@ h2 {
   .social {
     display: flex;
   
+  }
+  .tagline {
+    font-size: 1.4rem;
+    margin-top: 0em;
   }
 
   
