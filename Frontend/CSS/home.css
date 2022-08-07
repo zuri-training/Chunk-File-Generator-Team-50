@@ -17,12 +17,12 @@ html {
   --darkpink: #d1495b;
   --peachblue: #00798c;
   --powderblue: #d5effb;
-  --darkblue: #003d5b;
   --whiteink: #f6e4fe;
   --utility-cont: #e0e0e0;
   --white: #ffffff;
   --header: #3ecddf;
   --footer-texts: #575757;
+  --paleblue: rgb(59, 91, 177);
 }
 
 a {
@@ -38,12 +38,13 @@ footer {
 }
 
 header {
+  position: fixed;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 1%;
   top: 0;
   z-index: 50;
-  height: 88px;
+  min-height: 88px;
   width: 100%;
   background-color: var(--white);
   align-items: center;
@@ -75,6 +76,42 @@ header {
   /* margin-top: -50px; */
 }
 
+/* The Navigation Bar */
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* gap: .5%; */
+  justify-content: space-between;
+  min-width: 33%;
+  /* height: 28px; */
+  word-break: keep-all;
+  margin-left: -20px;
+
+  order: 2;
+
+  /* background-color: orangered; */
+}
+
+.navbar a {
+  position: relative;
+  /* width: 110px; */
+  /* height: 28px; */
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.navbar > a:hover {
+  background-color: var(--paleblue);
+  color: #ffffff;
+}
+
 /* The Search Bar */
 
 .search-cont {
@@ -86,7 +123,8 @@ header {
   height: 44px;
   background-color: rgb(238, 241, 250);
   border-radius: 8px;
-  order: 2;
+  margin-left: 16%;
+  order: 3;
 }
 
 .search-icon {
@@ -106,75 +144,52 @@ input[name="search-bar"] {
   background-color: rgb(238, 241, 250);
 }
 
-/* The Navigation Bar */
-
-.navbar {
-  position: relative;
-  display: flex;
-  align-items: center;
-  /* gap: 49px; */
-  justify-content: space-between;
-  max-width: 450px;
-  height: 28px;
-  word-break: keep-all;
-
-  order: 3;
-
-  /* background-color: orangered; */
+.notification {
+  order: 4;
+  width: 16px;
+  height: 20px;
 }
 
-div.navbar > a {
-  position: relative;
-  width: 110px;
-  height: 28px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 140%;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+/* The User Profile in the header */
 
-.navbar div {
-  position: relative;
-  height: 28px;
-  width: 110px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 140%;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: var(--footer-texts);
-}
-
-.navbar > a:hover {
-  color: #000000;
-}
-
-.navbar > div:hover {
-  color: #000000;
-}
-
-.tools {
+.user-prof-cont {
   position: relative;
   display: inline-block;
-  width: 90px;
+  width: 82px;
+  height: 48px;
+  order: 5;
   height: auto;
   cursor: default;
+  /* background-color: purple; */
 }
 
-.tools > div {
-  height: 28px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 140%;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  text-decoration: none;
-  color: black;
-}
-
-.tools img {
+.profile-pic {
   position: absolute;
-  top: 5px;
-  left: 45px;
+  left: 10px;
+  top: 10px;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  float: right;
+}
+
+.user-prof {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  /* background-color: var(--paleblue); */
+  /* float: right; */
+  /* justify-self: flex-start; */
+}
+
+.user-prof > img {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
   opacity: 0.5;
+  /* background-color: red; */
 }
 
 .tool-drop {
@@ -183,8 +198,6 @@ div.navbar > a {
   align-items: center;
   visibility: hidden;
   position: absolute;
-  width: 100%;
-  /* height: 300px; */
   word-wrap: none;
   box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
   z-index: 5;
@@ -192,8 +205,14 @@ div.navbar > a {
   border-top: 1px solid black;
 }
 
-.tools:hover .tool-drop {
+.user-prof-cont:hover .tool-drop {
+  position: absolute;
   visibility: visible;
+  top: 48px;
+  left: -20px;
+  width: 100%;
+  word-wrap: break-word;
+  background-color: green;
 }
 
 .tool-drop > a {
@@ -203,73 +222,13 @@ div.navbar > a {
   width: inherit;
   padding: 2px;
   font-size: small;
+  height: fit-content;
   background-color: var(--utility-cont);
 }
 
 .tool-drop a:hover {
   background-color: var(--footer-texts);
   color: var(--white);
-}
-
-/* To revisit, changes in child 1 affects child 2 */
-.navbar :nth-child(1) {
-  order: 1;
-  flex-grow: 0;
-}
-
-.navbar :nth-child(2) {
-  order: 2;
-  flex-grow: 0;
-}
-
-.navbar :nth-child(3) {
-  order: 3;
-  flex-grow: 0;
-}
-
-.navbar :nth-child(4) {
-  order: 4;
-  flex-grow: 0;
-}
-
-/* The User Profile in the header */
-
-.user-prof-cont {
-  position: relative;
-  display: inline-block;
-  width: 90px;
-  height: 48px;
-  order: 4;
-  margin-left: 5%;
-  height: auto;
-  cursor: default;
-  /* background-color: purple; */
-}
-
-.user-prof {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background-color: white;
-  float: right;
-  /* justify-self: flex-start; */
-}
-
-.user-prof > img {
-  position: absolute;
-  left: 80px;
-  bottom: 0;
-  width: 30px;
-  height: 30px;
-  opacity: 0.5;
-  float: right;
-  /* background-color: red; */
-}
-
-.user-prof-cont:hover .tool-drop {
-  position: absolute;
-  visibility: visible;
-  top: 48px;
 }
 
 /* MAIN */
@@ -329,12 +288,12 @@ main > h1 {
   width: 100%;
 }
 
-.split-cont > a {
+.split-cont a {
   text-decoration: none;
   color: #000000;
   position: relative;
   /* min-width: 270px; */
-  width: 260px;
+  min-width: 23.5%;
   height: 159px;
   background-color: var(--white);
   background: #ffffff;
@@ -344,6 +303,7 @@ main > h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-grow: 0;
   gap: 20px;
 }
 
@@ -389,11 +349,10 @@ main > h1 {
   background-color: var(--convert-icon);
 }
 
-.convert-cont > a {
-  /* min-width: 270px; */
+.convert-cont a {
   text-decoration: none;
   color: #000000;
-  width: 260px;
+  min-width: 23.5%;
   height: 159px;
   background-color: var(--white);
   background: #ffffff;
@@ -403,6 +362,7 @@ main > h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-grow: 0;
   gap: 20px;
 }
 
@@ -499,4 +459,31 @@ iframe {
   display: flex;
   justify-content: space-between;
   margin-top: 32px;
+}
+
+
+@media only screen and (max-width: 1170px) {
+  .split-cont a, .convert-cont a {
+    width: 47%;
+  }
+
+  .notification {
+    order: 1;
+    margin-left: 48%;
+  }
+
+  .user-prof-cont {
+    order: 1;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .split-cont a, .convert-cont a {
+    width: 70%;
+  }
+
+  .user-prof-cont, .navbar, .notification, .search-cont {
+    display: none;
+  }
 }
