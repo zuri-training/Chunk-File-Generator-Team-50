@@ -194,6 +194,12 @@ a.profile span{
         padding: 0.5em;
         border-radius: 7px;
     }
+    #flex li{
+        align-self: center;
+    }
+    a.profile {
+        margin: 0;
+    }
 
 
 
