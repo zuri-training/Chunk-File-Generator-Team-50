@@ -226,8 +226,13 @@ body, html {
     color: var(--white);
   }
 /* SECTIONS HEADING */
-  .section-head{
+  .first-section-head{
     padding-top: 100px;
+    text-align: center;
+
+  }
+  .second-section-head{
+    padding-top: 40px;
     text-align: center;
 
   }
@@ -349,8 +354,8 @@ body, html {
     text-align: center;
   }
   .pic{
-    height: 30%;
-    width: 90%;
+    height: 50%;
+    width: 100%;
     border-radius: 100%;
     padding: 80px 30px;
     margin: 0 auto 0 auto;
@@ -360,9 +365,33 @@ body, html {
   }
   /* Responsive layout - makes a one column layout instead of a two-column layout */
   @media (max-width: 800px) {
-    .left-item, .middle-item .right-item {
-      flex-direction: column-reverse;
+    .left-item, .middle-item {
+      flex: 50%;
       }
+    .right-item{
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+    }
+    .nested-left-item{
+      flex: 50%;
+      text-align: center;
+    }
+    .nested-right-item{
+      flex: 50%;
+      text-align: center;
+    }
+    @media (max-width: 800px) {
+      .nested-left-item, .nested.right-item {
+        flex: 50%;
+        }
+      .pic{
+          height: 75%;
+        }
+        .first-section-head{
+          padding-top: 200px;
+    text-align: center;
+        }
     }
 
     /* THE FOOTER */
