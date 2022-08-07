@@ -1,74 +1,99 @@
-/* footer */
-*, html {
-  margin: 0 0;
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+footer {
+  font-size: 1.8rem;
+  color: #fff;
+  font-family: 'DM Sans', sans-serif;
 }
 .footer-container {
   background-color: rgb(59, 91, 177);
-  display: flex;
-  flex-direction: column;
-  font-family: "DM Sans", sans-serif;
-  color: #ffffff;
+  padding: 2em 4em;
 
-  /* align-items: center; */
-  padding: 46px 100px;
 }
-footer {
-  width: 100%;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 .footer-top {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  margin-left: 0em;
+  margin-right: 6em;
 }
+a {
+  list-style-type: none;
+  text-decoration: none;
 
-.first h2 {
-  font-size: 32px;
-  color: black;
 }
-
-.first p {
-  margin-top: 24px;
-  margin-bottom: 14px;
-}
-
-.footer-logo {
-  height: 48px;
-}
-
-.tagline {
-  font-size: 10px;
-  /* color: red; */
-}
-
-.first .social {
+.mobile-flex {
   display: flex;
+  
 }
-
-.first .social img {
-  margin-right: 5px;
+.second, .third ,.fourth {
+  margin-left: 5em;
 }
-
-.column {
-  margin-right: 50px;
-  max-width: 290px;
-}
-
-.column-heading {
-  font-size: 32px;
-  margin-bottom: 16px;
-  /* color: #575757; */
-}
-
-.column p {
-  font-size: 20px;
-  margin-bottom: 8px;
-}
-
 .footer-bottom {
+  margin-top: 1em;
   display: flex;
   justify-content: space-between;
-  margin-top: 32px;
+}
+p {
+  margin: 0.75em 0;
+}
+h2 {
+  margin-bottom: 1em;
+}
+.footer-bottom p {
+  margin: 0;
+}
+/* Small and Medium Screens */
+@media screen and (max-width: 990px){
+  .footer-top {
+    display: block;
+    margin-right: 0;
+    margin-left: 1.5em;
+    padding-right: 3em;
+  }
+  .second, .third ,.fourth {
+    margin-left: 0;
+    margin-top: 2em;
+  }
+  .footer-container {
+    padding: 2em 0 4em 0;
+    font-size: 1.6rem;
+    
+  }
+  .mobile-flex {
+    justify-content: space-between;
+  }
+  .footer-bottom {
+    width: 90%;
+    margin: auto;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .footer-bottom p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .footer-logo {
+    width: 160px;
+    height: 80px;
+  }
+  footer {
+    padding-bottom: 5em;
+  }
+  .social {
+    display: flex;
+  
+  }
+  .tagline {
+    font-size: 1.4rem;
+    margin-top: 0em;
+  }
+
+  
 }
