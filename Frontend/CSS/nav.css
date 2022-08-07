@@ -22,11 +22,11 @@ nav {
 
 }
 
-img {
+/* img {
     width: 130px;
     height: 40px;
 
-}
+} */
 
 .nav-logo {
     padding: 2em 1.2em 1em 1em;
@@ -72,7 +72,7 @@ input {
     height: 35px;
     border-radius: 7px;
     background-image: url(../ASSETS/magnifying-glass-solid.svg);
-    background-position: 5% 10px;
+    background-position: 5% 12.5px;
     background-repeat: no-repeat;
     background-size: 15px;
     padding-left: 3em;
@@ -122,18 +122,27 @@ a.profile span{
     /* border: 1px solid red; */
     border-radius: 50%;
 }
-
-/* Large Screens styling */
-@media screen and (min-width: 600px) {
-    img {
-        width: 150px;
-        height: 40px;
-
-    }
+img {
+    width: 160px;
+    height: 50px;
 
 }
+#burger {
+    align-self: center;
+}
+
+/* Large Screens styling */
+/* @media screen and (min-width: 600px) {
+   
+
+} */
 
 @media screen and (min-width: 992px) {
+    img {
+        width: 200px;
+        height: 50px;
+
+    }
     #burger {
         display: none;
     }
@@ -179,7 +188,7 @@ a.profile span{
     }
 
     nav {
-        padding: 1.5em 0 1em 0;
+        padding: 1em 0 0.5em 0;
     }
 
     nav a {
