@@ -81,6 +81,10 @@ input {
     background-color: rgb(240, 243, 249);
 
 }
+a.profile {
+    text-align: center;
+    margin: 0 auto 1em;
+}
 
 ::placeholder {
     color: grey;
@@ -129,7 +133,7 @@ a.profile span{
 
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 992px) {
     #burger {
         display: none;
     }
