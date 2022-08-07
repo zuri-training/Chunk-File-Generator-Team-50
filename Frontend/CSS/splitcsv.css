@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@500&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+.split-section {
+  padding: 85px 100px 28px;
+}
+
+.container {}
+
+.split-title {
+  font-size: 32px;
+  margin-bottom: 38px;
+}
+
+.main-split-container {
+  border: 1px solid #3B5BB1;
+  height: 500px;
+}
+
+.upload,
+.progress,
+.split, .splitting {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+}
+
+.choose-file {
+  padding: 15px 21px;
+  background-color: #3B5BB1;
+  margin-bottom: 40px;
+  border-radius: 4px;
+}
+
+.choose-file input {
+  color: white;
+  /* padding: ; */
+}
+
+.drag-file {
+  display: flex;
+  align-items: center;
+  border: 2px solid #3B5BB1;
+  font-size: 15px;
+  border-radius: 16px;
+}
+
+.drag-file input {
+  padding: 16px 55px;
+  border-radius: 16px;
+  border: none;
+}
+
+.drag-file::placeholder {}
+
+.drag-file img {
+  height: 30px;
+}
+
+progress {
+  /* background-color: red; */
+  /* border-radius: 0px; */
+  color: red;
+  /* height: 100%; */
+}
+
+
+
+
+.split-contain {
+  /* margin: 0px 92px; */
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #3C3C3C;
+
+  /* padding: 100px; */
+}
+
+.split-contain h2 {
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.split-contain p {
+  margin-bottom: 40px;
+}
+
+
+.split-setting {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.split-setting .left{
+  margin-right: 40px;
+}
+
+.split-setting label {
+  font-size: 20px;
+  color: #3C3C3C;
+}
+
+.split-setting input {
+  padding: 10px 33px;
+  border-radius: 16px;
+  border: 2px solid #3B5BB1;
+  width: 100px;
+  margin-left: 16px;
+}
+
+.split-contain button, .splitting button {
+  padding: 16px 97px;
+  font-size: 15px;
+  background-color: #3B5BB1;
+  border: none;
+  color: white;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+
+
+.splitting {
+  color: #3C3C3C;
+
+}
+
+.splitting h2, .splitting img{
+  margin-bottom: 80px;
+}

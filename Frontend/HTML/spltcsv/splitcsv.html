@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../../CSS/splitcsv.css" />
+		<title>ChunkFile - Split CSV</title>
+	</head>
+	<body>
+		<header></header>
+		<main>
+			<section class="split-section">
+				<div class="container">
+					<h2 class="split-title">Split CSV Files</h2>
+					<div class="main-split-container">
+						<div class="upload">
+							<div class="choose-file">
+								<input type="file" />
+							</div>
+							<div class="drag-file">
+								<input type="text" placeholder="or Drag file here" />
+								<img src="../../assets/drive.svg" alt="" />
+							</div>
+						</div>
+
+						<div class="progress">
+							<div class="progress-container">
+								<progress id="file" value="100" max="100">31002%</progress>
+							</div>
+						</div>
+
+						<div class="split">
+							<div class="split-contain">
+								<h2>Split CSV FIle</h2>
+								<p>Split into as many files as you want</p>
+								<div class="split-setting">
+									<div class="left">
+										<label for="size">Size of split files</label>
+										<input type="text" placeholder="5mb" />
+									</div>
+
+									<div>
+										<label for="line">Number of lines per file</label>
+										<input type="text" placeholder="100" />
+									</div>
+								</div>
+
+								<button>Split CSV</button>
+							</div>
+						</div>
+
+						<div class="splitting">
+							<h2>Splitting</h2>
+							<img src="../../assets/loading.svg" alt="" />
+							<button>Cancel</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer></footer>
+	</body>
+</html>
