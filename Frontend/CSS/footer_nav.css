@@ -47,8 +47,8 @@ h2 {
 .footer-bottom p {
   margin: 0;
 }
-
-@media screen and (max-width: 600px){
+/* Small and Medium Screens */
+@media screen and (max-width: 990px){
   .footer-top {
     display: block;
     margin-right: 0;
