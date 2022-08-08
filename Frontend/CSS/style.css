@@ -230,7 +230,6 @@ nav {
 
 /* how container  */
 
-.how-container {}
 
 .hows {
   display: grid;
@@ -413,10 +412,6 @@ nav {
   align-items: flex-start;
 }
 
-.first h2 {
-  font-size: 32px;
-  color: black;
-}
 
 .first p {
   margin-top: 24px;
@@ -583,30 +578,34 @@ nav {
   .used-section {
     padding: 40px 0;
     background-color: #EBECEE;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   .used-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
     text-align: center;
   }
 
   .users {
-    display: flex;
     margin-top: 30px;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px 48px;
     /* margin: 0 30px; */
   }
 
+  .user {
+    width: 30%;
+    flex-wrap: wrap;
+  }
 
   .faq-group {
     text-align: center;
+  }
+
+  .how-container {
+    margin-top: 25px;
   }
 
   .hows {
@@ -626,6 +625,7 @@ nav {
   .contact-container {
     flex-direction: column;
     text-align: center;
+    margin-bottom: 20px;
   }
 
   .contact-left {
@@ -655,9 +655,51 @@ nav {
 
   .footer-top {
     flex-direction: column;
+    column-gap: 52px;
   }
 
-  .tagline{
+
+  .tagline {
     font-size: 11px;
+  }
+
+  .column {
+    margin-right: 0px;
+    max-width: 290px;
+  }
+
+
+  .column-heading {
+    font-size: 15px;
+    margin-bottom: 16px;
+    /* color: #575757; */
+  }
+
+  .column p {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .second,
+  .third {
+    width: 40%;
+  }
+
+
+
+  .footer-bottom {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .footer-bottom p {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .footer-bottom p img {
+    margin-left: 10px;
   }
 }
