@@ -235,7 +235,7 @@ nav {
 .hows {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  column-gap: 30px;
+  gap: 30px;
   margin-top: 36px;
   font-family: 'DM Sans', sans-serif;
 }
@@ -243,6 +243,8 @@ nav {
 .how {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+  /* align-items: flex-end; */
   position: relative;
 }
 
@@ -268,7 +270,7 @@ nav {
 }
 
 .how-top img {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   width: 100%;
 }
 
@@ -281,6 +283,7 @@ nav {
 .how-desc h3 {
   font-size: 32px;
   margin-bottom: 8px;
+  color: rgb(59, 91, 177);
 }
 
 .how-desc p {
@@ -303,7 +306,6 @@ nav {
 .faq-title {
   padding: 16px;
   background-color: #E0DCFF;
-
 }
 
 .faq-desc {
@@ -320,6 +322,7 @@ nav {
 /* contact  */
 .contact-container {
   display: flex;
+  flex-direction: row;
   margin-top: 100px;
   margin-bottom: 189px;
   font-family: 'DM Sans', sans-serif;
@@ -406,6 +409,7 @@ nav {
 .footer-top {
   display: flex;
   flex-direction: row;
+  width: 100%;
   align-items: flex-start;
 }
 
@@ -526,6 +530,7 @@ nav {
 
   .section-title {
     font-size: 25px;
+    text-align: center;
   }
 
   .features {
@@ -539,9 +544,8 @@ nav {
     font-size: 21px;
   }
 
-
-
-  .why-container {
+  .why-container,
+  .faq-container {
     margin-top: 71px;
   }
 
@@ -572,7 +576,6 @@ nav {
     font-size: 21px;
   }
 
-
   .why-desc {
     font-size: 15px;
   }
@@ -582,7 +585,7 @@ nav {
     background-color: #EBECEE;
     margin-top: 100px;
   }
-  
+
   .used-container {
     display: flex;
     flex-direction: column;
@@ -590,7 +593,7 @@ nav {
     justify-content: center;
     text-align: center;
   }
-  
+
   .users {
     display: flex;
     margin-top: 30px;
@@ -602,5 +605,59 @@ nav {
   }
 
 
+  .faq-group {
+    text-align: center;
+  }
 
+  .hows {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin-top: 16px;
+    gap: 45px;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .how-top {
+    height: 328px;
+    margin-bottom: 4px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-left {
+    height: 400px;
+  }
+
+  .contact-right h2 {
+    /* visibility: hidden; */
+    font-size: 21px;
+  }
+
+  .contact-right p {
+    font-size: 15px;
+  }
+
+  .form-group {
+    text-align: left;
+  }
+
+  .footer-container {
+    padding: 80px 20px;
+  }
+
+  .footer-logo {
+    height: 24px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .tagline{
+    font-size: 11px;
+  }
 }
