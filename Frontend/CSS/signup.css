@@ -44,6 +44,7 @@ header {
     gap: 50px;
     justify-content: center;
     margin-bottom: 10px;
+    padding-top: 30px;
 }
 
 /* IMAGE  __________________________*/
@@ -55,13 +56,13 @@ header {
 .img-and-logo {
     height: 100vh;
     width: 40rem;
-    background-color: #d9d9d9;
+    background-color: #BFD9F6;
     border-radius: 0 25px 0 0;
+    padding-top: 30px;
 
 }
 
 .image-section {
-    margin-left: 140px;
     margin-top: 70px;
 }
 
@@ -70,6 +71,10 @@ header {
     width: 35rem;
 }
 
+
+.mobile-logo {
+    display: none;
+}
 /* ________________________________ */
 
 .button-section {
@@ -113,6 +118,10 @@ a {
     font-family: 'DM Sans', sans-serif;
     font-weight: 100;
     
+}
+
+.mobile-form-bottom-text {
+    display: none;
 }
 
 .line {
@@ -164,7 +173,7 @@ input {
 
 /* FORM BUTTON __________________________________________________*/
 .btn-3 {
-    background-color: #3183BE;
+    background-color: #3B5BB1;
     border: none;
     border-radius: 5px;
     height: 3rem;
@@ -186,12 +195,12 @@ input {
 }
 
 .tnc-links {
-    color: #3183BE;
+    color: #3B5BB1;
     font-size: 0.9rem;
 }
 
 .foot-text span a {
-    color: #3183BE;
+    color: #3B5BB1;
     font-size: 0.9rem;
     font-weight: bold;
 }
@@ -202,7 +211,231 @@ input {
 
 button:hover,
 button a:hover {
-    background-color: #3183BE;
+    background-color: #3B5BB1;
     color: white;
 }
+
+.mobile-btn-sec {
+    display: none;
+}
 /* __________________________________________________ */
+
+
+@media (max-width:1300px) {
+    body {
+        gap: 5px;
+        height: 100%;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .img-and-logo {
+        height: 100%;
+        width: 27rem;
+    }
+
+    .img {
+        height:70vh;
+        width: 27rem;
+    }
+
+    .form-section {
+        margin-right: 10px;
+    }
+}
+
+
+@media (max-width:870px) {
+    .side-1 {
+        display: none;
+    }
+
+    body {
+        display: block;
+        justify-content: center;
+        gap: 0;
+    }
+
+    
+    form {
+        display: flex;
+        justify-self: center;
+    }
+
+    .mobile-logo {
+        display: block;
+        align-self: left;
+    }
+
+    .form-section {
+        align-self: center;
+    }
+}
+
+@media (max-width:475px) {
+    body {
+        align-items: center;
+        gap: 10px;
+    }
+
+    .side-1 {
+        display: none;
+    }
+
+    .button-section {
+        display: none;
+    }
+
+    .btn-3 {
+        width: 90%;
+        align-self: center;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    label p {
+        margin-left: 20px;
+        font-weight: bold;
+    }
+
+    input {
+        align-self: center;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .form-and-image-section {
+        justify-self: center;
+        align-self: center;
+        padding: 0 0;
+    }
+
+    .form-section {
+        display: flex;
+        justify-self: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .form-section-sub {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form-section div h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .form-text {
+        font-size: 0.8rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .mobile-btn-sec {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        gap: 10px;
+        font-family: 'DM Sans', sans-serif;
+        margin-bottom: 50px;
+    }
+    
+    .sign-up-btn1{
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        padding: 3px;
+        border-radius: 5px;
+        width: 10rem;
+        border: none;
+        
+    }
+    
+    .ggle {
+        background-color: #d9d9d9;
+    }
+
+    .fb {
+        background-color: #3B5BB1;
+
+    }
+
+    .sign-up-btn{
+        display: flex;
+        gap: 5px;
+        margin: 3px;
+        font-size: 9px;
+    }
+
+    .icon {
+        height: 15px;
+        width: 15px;
+    }
+
+    .icon-text {
+        color: white;
+        font-size: 0.7rem;
+        font-weight: bold;
+    }
+
+    .form{
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-bottom-text {
+        display: none;
+    }
+
+    .mobile-form-bottom-text {
+        display: flex;
+        justify-content: center;
+        margin: 15px 0;
+    }
+    
+    .line {
+        border-top: 1px solid black;
+        width: 15px;
+        margin: 0 10px;
+    }
+
+    .cont {
+        font-weight: lighter;
+        font-size: 0.7rem;
+    }
+
+    .ack-text {
+        font-size: 10px;
+        align-self: center;
+        width: 95%;
+        margin: 0 0 0 30px;
+    }
+
+    .tnc-links, .foot-text p, .foot-text p span a  {
+        font-size: 11px;
+    }
+
+    .foot-text {
+        align-self: center;
+    }
+
+
+    .mobile-logo{
+        align-self: left;
+    }
+
+
+    .logo {
+        height: 100px;
+        width: 125px;
+
+    }
+
+}
