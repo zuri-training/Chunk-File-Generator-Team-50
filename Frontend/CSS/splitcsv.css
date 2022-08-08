@@ -12,11 +12,40 @@
   padding: 85px 100px 28px;
 }
 
-.container {}
+.container-top {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-top .right{
+  display: flex;
+  align-items: center;
+}
+
+.right .right-col{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+
+.right-col button{
+  height: 30px;
+  cursor: pointer;
+  margin-right: 4px;
+  border: none;
+}
+
+
+.right-col button img{
+  height: 100%;
+}
+
 
 .split-title {
   font-size: 32px;
-  margin-bottom: 38px;
 }
 
 .main-split-container {
@@ -28,7 +57,8 @@
 .progress,
 .split,
 .splitting,
-.splitted {
+.splitted,
+.result {
   height: 100%;
   justify-content: center;
   align-items: center;
@@ -75,9 +105,6 @@ progress {
   color: red;
   /* height: 100%; */
 }
-
-
-
 
 .split-contain {
   /* margin: 0px 92px; */
@@ -163,7 +190,7 @@ progress {
   border-radius: 16px;
   border: none;
   font-size: 20px;
-  
+
 }
 
 .btn-group .download {
@@ -176,4 +203,35 @@ progress {
 .btn-group .save {
   border: 1px solid #3B5BB1;
   padding: 22px 16px;
+}
+
+.rad-input {
+  height: 15px;
+  width: 15px;
+}
+
+.result label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.result label p {
+  padding: 16px;
+  background-color: #3B5BB1;
+  margin-left: 10px;
+  width: 400px;
+  border-radius: 4px;
+  color: white;
+}
+
+.result label button {
+  border: none;
+  cursor: pointer;
+
+}
+
+.result label .delete {
+  margin-right: 16px;
+  margin-left: 32px;
 }
