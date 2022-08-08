@@ -26,7 +26,9 @@
 
 .upload,
 .progress,
-.split, .splitting {
+.split,
+.splitting,
+.splitted {
   height: 100%;
   justify-content: center;
   align-items: center;
@@ -106,7 +108,7 @@ progress {
   margin-bottom: 40px;
 }
 
-.split-setting .left{
+.split-setting .left {
   margin-right: 40px;
 }
 
@@ -123,7 +125,8 @@ progress {
   margin-left: 16px;
 }
 
-.split-contain button, .splitting button {
+.split-contain button,
+.splitting button {
   padding: 16px 97px;
   font-size: 15px;
   background-color: #3B5BB1;
@@ -140,6 +143,37 @@ progress {
 
 }
 
-.splitting h2, .splitting img{
+.splitting h2,
+.splitting img {
   margin-bottom: 80px;
+}
+
+.splitted p {
+  color: #3B5BB1;
+  margin: 48px;
+
+}
+
+.splitted .btn-group {
+  display: flex;
+
+}
+
+.btn-group button {
+  border-radius: 16px;
+  border: none;
+  font-size: 20px;
+  
+}
+
+.btn-group .download {
+  margin-right: 60px;
+  background-color: #3B5BB1;
+  color: white;
+  padding: 22px 26px;
+}
+
+.btn-group .save {
+  border: 1px solid #3B5BB1;
+  padding: 22px 16px;
 }
