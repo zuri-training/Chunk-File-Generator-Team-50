@@ -47,6 +47,13 @@ h2 {
 .footer-bottom p {
   margin: 0;
 }
+.last-img {
+  width: 21px;
+  height: 21px;
+}
+.footer-bottom span {
+  font-weight: bold;
+}
 /* Small and Medium Screens */
 @media screen and (max-width: 990px){
   .footer-top {
