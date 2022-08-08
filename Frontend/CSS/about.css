@@ -230,17 +230,37 @@ body, html {
   }
 /* SECTIONS HEADING */
 .section{
-  font-size: 1.8rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 32px;
+  color: #353535;
 }
   .first-section-head{
-    padding-top: 100px;
+    padding-top: 150px;
+    padding-bottom: 60px;
     text-align: center;
+    margin: 0 auto 0 auto;
+    width: 253px;
+    height: 74px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.563rem;
+    line-height: 74px;
+    color: #3b5bb1;
 
   }
   .second-section-head{
     padding-top: 40px;
+    padding-bottom: 70px;
     text-align: center;
-
+    margin: 0 auto 0 auto;
+    width: 456px;
+    height: 79px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.563rem;
+    line-height: 74px;
+    color: #3b5bb1;
   }
   .flex-container-1{
     display: flex;
@@ -275,6 +295,7 @@ body, html {
   .footer-container {
     background-color: rgb(59, 91, 177);
     padding: 2em 4em;
+    margin-top: 9.375rem;
   
   }
   .footer-top {
@@ -392,12 +413,13 @@ body, html {
   .pic{
     height: 50%;
     width: 100%;
-    border-radius: 100%;
-    padding: 80px 30px;
+    padding: 70px 30px 10px 30px;
     margin: 0 auto 0 auto;
   }
   .fig{
     text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
   }
   /* Responsive layout - makes a one column layout instead of a two-column layout */
   @media (max-width: 800px) {
@@ -422,7 +444,8 @@ body, html {
         flex: 50%;
         }
       .pic{
-          height: 77%;
+          height: 70%;
+          padding-bottom: 20px;
         }
         .first-section-head{
           padding-top: 200px;
