@@ -28,205 +28,231 @@ body, html {
     color: var(--footer-texts);
   }
   
-  header,
   main,
   footer {
     padding: 0 5%;
     font-family: "DM Sans";
   }
   
-  header {
-    position: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1%;
-    top: 0;
-    z-index: 50;
-    min-height: 88px;
-    width: 100%;
-    background-color: var(--white);
-    align-items: center;
-    box-shadow: 0 10px 15px -8px rgb(189, 186, 186);
+  *,
+  ::before,
+  ::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
   }
   
-  /* The Logo */
+  *,
+  nav {
+      font-family: 'DM Sans', sans-serif;
   
-  .logo-cont {
-    display: flex;
-    height: 72px;
-    min-width: 235px;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    order: 1;
-  
-    /* background-color: yellow; */
   }
   
-  .logo-icon {
-    /* height: 150px; */
-    width: 180px;
-    color: rgb(59, 91, 177);
+  nav {
+      box-shadow: 0px 3px 5px 0px rgba(125, 125, 125, 0.3);
+      -webkit-box-shadow: 0px 3px 5px 0px rgba(125, 125, 125, 0.3);
+      width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: 10;
+      background-color: white;
+  
+  
   }
   
-  .logo-text {
-    font-weight: 700;
-    /* margin-top: -50px; */
+  /* img {
+      width: 130px;
+      height: 40px;
+  
+  } */
+  
+  .nav-logo {
+      padding: 2em 1.2em 1em 1em;
+      display: flex;
+      justify-content: space-between;
   }
   
-  /* The Navigation Bar */
+  .dropdown {
+      display: none;
   
-  .navbar {
-    position: relative;
-    display: flex;
-    align-items: center;
-    /* gap: .5%; */
-    justify-content: space-between;
-    min-width: 33%;
-    /* height: 28px; */
-    word-break: keep-all;
-    margin-left: -20px;
-  
-    order: 2;
-  
-    /* background-color: orangered; */
   }
   
-  .navbar a {
-    position: relative;
-    /* width: 110px; */
-    /* height: 28px; */
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 140%;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    text-align: center;
-    padding: 4px;
-    border-radius: 4px;
+  .block {
+      display: block;
   }
   
-  .navbar > a:hover {
-    background-color: var(--paleblue);
-    color: #ffffff;
+  nav ul li {
+      list-style-type: none;
   }
   
-  /* The Search Bar */
-  
-  .search-cont {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    justify-content: flex-start;
-    width: 228px;
-    height: 44px;
-    background-color: rgb(238, 241, 250);
-    border-radius: 8px;
-    margin-left: 16%;
-    order: 3;
+  nav a {
+      text-decoration: none;
+      display: block;
+      padding: 1em 0;
+      text-align: center;
+      color: black;
   }
   
-  .search-icon {
-    width: 24px;
-    height: 24px;
-    margin-left: 7px;
+  .navbar-nav {
+      font-weight: 500;
   }
   
-  input[name="search-bar"] {
-    border: none;
-    outline: none;
-    font-size: 16px;
-    width: 190px;
-    height: inherit;
-    text-shadow: none;
-    border-radius: 8px;
-    background-color: rgb(238, 241, 250);
+  #burger {
+      cursor: pointer;
   }
   
-  .notification {
-    order: 4;
-    width: 16px;
-    height: 20px;
+  form {
+      padding: 0.3em;
+      text-align: center;
   }
   
-  /* The User Profile in the header */
+  input {
+      height: 35px;
+      border-radius: 7px;
+      background-image: url(../ASSETS/magnifying-glass-solid.svg);
+      background-position: 5% 12.5px;
+      background-repeat: no-repeat;
+      background-size: 15px;
+      padding-left: 3em;
+      padding-top: 0.5em;
+      border: 1px solid grey;
+      background-color: rgb(240, 243, 249);
   
-  .user-prof-cont {
-    position: relative;
-    display: inline-block;
-    width: 82px;
-    height: 48px;
-    order: 5;
-    height: auto;
-    cursor: default;
-    /* background-color: purple; */
+  }
+  a.profile {
+      text-align: center;
+      margin: 0 auto 1em;
   }
   
-  .profile-pic {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    width: inherit;
-    height: inherit;
-    border-radius: 50%;
-    float: right;
+  ::placeholder {
+      color: grey;
   }
   
-  .user-prof {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    /* background-color: var(--paleblue); */
-    /* float: right; */
-    /* justify-self: flex-start; */
+  /* Internet Explorer */
+  :-ms-input-placeholder {
+      color: #b9bdc4;
   }
   
-  .user-prof > img {
-    position: absolute;
-    right: 20px;
-    bottom: 0;
-    width: 30px;
-    height: 30px;
-    opacity: 0.5;
-    /* background-color: red; */
+  /* Microsoft Edge */
+  ::-ms-input-placeholder {
+      color: #b9bdc4;
+  }
+  /* profile styles */
+  a.profile {
+      border: 1px solid black;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      position: relative;
+  }
+  /* message styles */
+  a.profile span{
+      display: block;
+      color: #fff;
+      font-weight: bold;
+      background-color: rgb(59, 91, 177);
+      position: absolute;
+      top: -5px;
+      right: -7px;
+      font-size: 10px;
+      height: 15px;
+      width: 15px;
+      /* border: 1px solid red; */
+      border-radius: 50%;
+  }
+  img {
+      width: 160px;
+      height: 50px;
+  
+  }
+  #burger {
+      align-self: center;
   }
   
-  .tool-drop {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    visibility: hidden;
-    position: absolute;
-    word-wrap: none;
-    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
-    z-index: 5;
-    text-align: left;
-    border-top: 1px solid black;
-  }
+  /* Large Screens styling */
+  /* @media screen and (min-width: 600px) {
+     
   
-  .user-prof-cont:hover .tool-drop {
-    position: absolute;
-    visibility: visible;
-    top: 48px;
-    left: -20px;
-    width: 100%;
-    word-wrap: break-word;
-    background-color: green;
-  }
+  } */
   
-  .tool-drop > a {
-    /* border-bottom: 1px solid black; */
-    border: 1px solid black;
-    border-top: transparent;
-    width: inherit;
-    padding: 2px;
-    font-size: small;
-    height: fit-content;
-    background-color: var(--utility-cont);
-  }
+  @media screen and (min-width: 992px) {
+      img {
+          width: 200px;
+          height: 50px;
   
-  .tool-drop a:hover {
-    background-color: var(--footer-texts);
-    color: var(--white);
+      }
+      #burger {
+          display: none;
+      }
+  
+      .active {
+          background-color: rgb(59, 91, 177);
+          color: #fff;
+  
+      }
+  
+      #flex {
+          display: flex;
+          align-items: center;
+      }
+  
+  
+      .nav-container {
+          padding: 0.4em 2em;
+          display: flex;
+          justify-content: space-around;
+      }
+  
+      .dropdown {
+          align-self: center;
+          display: flex;
+      }
+  
+      nav ul {
+          display: flex;
+          justify-content: space-between;
+      }
+  
+      nav li {
+          margin-left: 1em;
+      }
+  
+      input {
+          width: 300px;
+      }
+  
+      .nav-logo {
+          padding: 0em 0em 0em 0em;
+      }
+  
+      nav {
+          padding: 1em 0 0.5em 0;
+      }
+  
+      nav a {
+          padding: 0;
+      }
+  
+      .nav-item {
+          margin-left: 2em;
+      }
+  
+      .navbar-nav a {
+          padding: 0.5em;
+          border-radius: 7px;
+      }
+      #flex li{
+          align-self: center;
+      }
+      a.profile {
+          margin: 0;
+      }
+  
+  
+  
+  
+  
+  
   }
 /* SECTIONS HEADING */
 .section{
@@ -452,4 +478,67 @@ body, html {
     text-align: center;
         }
     }
+<<<<<<< HEAD
+
+    /* THE FOOTER */
+
+/* The footer container */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: var(--powderblue);
+    width: 100%;
+    min-height: 350px;
+    gap: 20px;
+    margin-top: 47px;
+}
+
+footer a, h1, h4{
+    text-decoration: none;
+    color: var(--footer-texts);
+}
+
+/* All four containers in gthe footer */
+footer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+    width: 220px;
+    min-height: 154px;
+    /* background-color: red; */
+}
+
+/* The first footer container housing the company logo, "ChunkFile text" and the social media icons */
+.footer-logo {
+    display: flex;
+    width: 235px;
+    height: 54px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+footer div > img {
+    width: 70px;
+    height: 54px;
+    background-color: transparent;
+}
+
+
+.socials {
+    display: flex;
+    gap: 5px;
+}
+
+.socials > a {
+    width: 24px;
+    height: 24px;
+}
+  }
+=======
     
+>>>>>>> 311ccb5ad759e70b33f4494e20d6c337e663d49d

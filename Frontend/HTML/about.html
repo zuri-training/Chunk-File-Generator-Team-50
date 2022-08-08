@@ -13,11 +13,25 @@
 <body>
         <!-- HEADER CONTAINER -->
         <header>
-            <!-- The Logo and Logo text -->
-            <div class="logo-cont">
-                <a href="#"><img src="../assets/header-logo1.svg" class="logo-icon"></a>
-            </div>
+            <nav>
+                <div class="nav-container">
+                    <div class="nav-logo">
+                        <img src="../ASSETS/header-logo1.svg" alt="">
+                        <div id="burger">
+                            <h2><i class="fa-solid fa-bars"></i></h2>
+                        </div>
+                    </div>
+                    <div id="links" class="dropdown">
+                        <ul class="navbar-nav">
+                            <li><a href="#" class="links active">Home</a></li>
+                            <li><a href="#" class="links">Tools</a></li>
+                            <li><a href="#" class="links">About</a></li>
+                            <li><a href="#" class="links">Contact</a></li>
             
+<<<<<<< HEAD
+                        </ul>
+                    </div>
+=======
             <!-- Navigation menu -->
             <div class="navbar">
              <a href="index.html">Home</a>
@@ -33,21 +47,33 @@
             </div>
 
             <img class="notification" src="./Homepage Assets/notifications.svg" alt="bell-icon" width="16" height="20">
+>>>>>>> 311ccb5ad759e70b33f4494e20d6c337e663d49d
             
-           <!-- User Profile -->
-           <div class="user-prof-cont">
-               <div class="user-prof">
-                    <img class="profile-pic" src="./Homepage Assets/user-prof.svg" alt="profile-pic" width="48" height="48">
-                    <img src="./Homepage Assets/arrow_drop_down.svg" alt="arrow_drop_down">
-               </div>
-               <div class="tool-drop">
-                    <a href="#">Profile</a>
-                    <a href="#">Downloaded files</a>
-                    <a href="#">Saved files</a>
-                    <a href="#">Help Center</a>
-                    <a href="#">Log out</a>
-               </div> 
-           </div>
+                    
+                    <div id="flex" class="dropdown">
+                        <form>
+                            <input type="search" name="" id="" placeholder='Search'>
+                        </form>
+                        <ul>
+                            <li><a href="#"><i class="fa-regular fa-bell" style="color: rgb(59, 91, 177);"></i></a></li>
+                            <!-- profile -->
+                            <li><a href="#" class="profile">
+                                    <!--profile-img added here -->
+                                    <span class="bubble"><!--message no here -->8</span>
+                                </a></li>
+                            <!-- <i class="fa-solid fa-user"></i> -->
+                        </ul>
+            
+                    </div>
+                    <!-- <div class="dropdown">
+            
+            
+                         rgb(59, 91, 177) 
+                    </div> -->
+                </div>
+            </nav>
+            <!-- JavaScript -->
+            <script src="../JAVASCRIPT/nav.js"></script>
         </header>
     <!-- MAIN CONTAINER -->
     <main>
