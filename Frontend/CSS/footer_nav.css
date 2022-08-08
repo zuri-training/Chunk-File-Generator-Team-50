@@ -52,24 +52,47 @@ h2 {
   .footer-top {
     display: block;
     margin-right: 0;
+    margin-left: 1.5em;
+    padding-right: 3em;
   }
   .second, .third ,.fourth {
     margin-left: 0;
     margin-top: 2em;
   }
   .footer-container {
-    padding: 2em 0 1em 0;
-    padding-right: 3em;
+    padding: 2em 0 4em 0;
+    font-size: 1.6rem;
+    
   }
   .mobile-flex {
     justify-content: space-between;
   }
   .footer-bottom {
-    display: block;
+    width: 90%;
+    margin: auto;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column-reverse;
     text-align: center;
   }
   .footer-bottom p {
     margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .footer-logo {
+    width: 160px;
+    height: 80px;
+  }
+  footer {
+    padding-bottom: 5em;
+  }
+  .social {
+    display: flex;
+  
+  }
+  .tagline {
+    font-size: 1.4rem;
+    margin-top: 0em;
   }
 
   
