@@ -21,7 +21,7 @@ footer {
   margin-left: 0em;
   margin-right: 6em;
 }
-a {
+.social .a {
   list-style-type: none;
   text-decoration: none;
 
@@ -30,7 +30,7 @@ a {
   display: flex;
   
 }
-.second, .third ,.fourth {
+.footer-top .second, .mobile-flex .third , .mobile-flex .fourth {
   margin-left: 5em;
 }
 .footer-bottom {
@@ -47,7 +47,7 @@ h2 {
 .footer-bottom p {
   margin: 0;
 }
-.last-img {
+.footer-bottom .last-img {
   width: 21px;
   height: 21px;
 }
@@ -62,7 +62,7 @@ h2 {
     margin-left: 1.5em;
     padding-right: 3em;
   }
-  .second, .third ,.fourth {
+  .footer-top .second, .mobile-flex .third ,.mobile-flex .fourth {
     margin-left: 0;
     margin-top: 2em;
   }
