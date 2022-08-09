@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>about us</title>
     <link rel="stylesheet" href="../CSS/about.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -27,8 +28,26 @@
                             <li><a href="#" class="links">About</a></li>
                             <li><a href="#" class="links">Contact</a></li>
             
+<<<<<<< HEAD
                         </ul>
                     </div>
+=======
+            <!-- Navigation menu -->
+            <div class="navbar">
+             <a href="index.html">Home</a>
+             <a href="#">Tools</a>
+             <a href="about.html">About</a>
+             <a href="#">Contact Us</a>
+            </div>
+
+            <!-- The search bar container -->
+            <div class="search-cont">
+                <label class="search-icon" for="search-bar"><img src="./Homepage Assets/search icon.svg" alt="search icon" width="24" height="24"></label>
+                <input type="search" name="search-bar" id="search-bar" placeholder="Search">
+            </div>
+
+            <img class="notification" src="./Homepage Assets/notifications.svg" alt="bell-icon" width="16" height="20">
+>>>>>>> 311ccb5ad759e70b33f4494e20d6c337e663d49d
             
                     
                     <div id="flex" class="dropdown">
@@ -59,7 +78,7 @@
     <!-- MAIN CONTAINER -->
     <main>
         <!-- THE FIRST SECTION -->
-        <section>
+        <section class="section">
             <!-- THE FIRST SECTION HEADING -->
             <h1 class="first-section-head">ABOUT US</h1>
             <!-- THE FIRST FLEX CONTAINER -->
@@ -92,7 +111,7 @@
             </div>
         </section>
          <!-- THE SECOND SECTION -->
-        <section>
+        <section class="section">
             <!-- THE SECOND SECTION HEADING -->
             <h1 class="second-section-head">Meet The Team</h1>
             <p class="p-meet">
@@ -155,69 +174,71 @@
             </div>
         </section>
     </main>
-        <!-- THE FOOTER -->
-        <footer class="footer-container">
-            <div class="footer-top">
-                <!-- column 1 -->
-                <div class="column first">
-                    <img class="footer-logo" src="../assets/footer-logo.svg" alt="Logo" />
-        
-                    <p class="tagline">Split your CSV and JSON files the easy way...</p>
-                    <div class="social">
-                        <a href="#">
-                            <img src="../assets/Facebook.png" alt="" />
-                        </a>
-        
-                        <a href="#">
-                            <img src="../assets/instagram.png" alt="" />
-                        </a>
-        
-                        <a href="#">
-                            <img src="../assets/twitter.png" alt="" />
-                        </a>
-        
-                        <a href="#">
-                            <img src="../assets/linkedin.png" alt="" />
-                        </a>
-                    </div>
-                </div>
-        
-                <!-- column 2  -->
-                <div class="column second">
-                    <h2 class="column-heading">Product</h2>
-                    <p>App Integration</p>
-                    <p>Tools</p>
-                </div>
-        
-                <!-- column 3  -->
-                <div class="column third">
-                    <h2 class="column-heading">Company</h2>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Support</p>
-                    <p>Privacy Policy</p>
-                    <p>Contact Us</p>
-                    <p>FAQ</p>
-                </div>
-        
-                <!-- column 4  -->
-                <div class="column fourth">
-                    <h2 class="column-heading">Tools</h2>
-                    <p>Split CSV</p>
-                    <p>Split JSON</p>
-                    <p>Convert CSV</p>
-                    <p>Convert JSON</p>
-                    <p>Merve CSV</p>
-                    <p>Merge JSON</p>
-                    <p>FAQ</p>
-                </div>
+ <!-- footer  -->
+<footer class="footer-container">
+    <div class="footer-top">
+        <!-- column 1 -->
+        <div class="column first">
+            <img class="footer-logo" src="../assets/footer-logo.svg" alt="" />
+
+            <p class="tagline">Split your CSV and JSON files the easy way...</p>
+            <div class="social">
+                <a href="#">
+                    <img src="../assets/Facebook.png" alt="" />
+                </a>
+
+                <a href="#">
+                    <img src="../assets/instagram.png" alt="" />
+                </a>
+
+                <a href="#">
+                    <img src="../assets/twitter.png" alt="" />
+                </a>
+
+                <a href="#">
+                    <img src="../assets/linkedin.png" alt="" />
+                </a>
             </div>
-            <div class="footer-bottom">
-                <div>&copy; 2022 ChunkFile. All rights reserved.</div>
-        
-                <p><span>12,000</span> Files splitted</p>
+        </div>
+
+        <!-- column 2  -->
+        <div class="column second">
+            <h2 class="column-heading">Product</h2>
+            <p>App Integration</p>
+            <p>Tools</p>
+        </div>
+
+        <!-- column 3  -->
+        <div class="mobile-flex">
+            <div class="column third">
+                <h2 class="column-heading">Company</h2>
+                <p>Home</p>
+                <p>About</p>
+                <p>Support</p>
+                <p>Privacy Policy</p>
+                <p>Contact Us</p>
+                <p>FAQ</p>
             </div>
-        </footer>
+
+            <!-- column 4  -->
+            <div class="column fourth">
+                <h2 class="column-heading">Tools</h2>
+                <p>Split CSV</p>
+                <p>Split JSON</p>
+                <p>Convert CSV</p>
+                <p>Convert JSON</p>
+                <p>Merge CSV</p>
+                <p>Merge JSON</p>
+                <p>Others</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div>&copy;2022 ChunkFile. All rights reserved.</div>
+
+        <p><span>12,000</span> Files splitted</p>
+    </div>
+</footer>     
 </body>
 
 </html>
