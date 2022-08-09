@@ -10,3 +10,11 @@ https://www.figma.com/file/HDodbxGZGTlpZFJKqWSV2C/Team-50-Chunk-Files?node-id=29
 Mobile screen contact us Page 
 
 https://www.figma.com/file/HDodbxGZGTlpZFJKqWSV2C/Team-50-Chunk-Files?node-id=730%3A912
+
+Split CSV
+
+https://www.figma.com/file/HDodbxGZGTlpZFJKqWSV2C/Team-50-Chunk-Files?node-id=431%3A149
+
+Split JSON
+
+https://www.figma.com/file/HDodbxGZGTlpZFJKqWSV2C/Team-50-Chunk-Files?node-id=431%3A150
