@@ -1,13 +1,15 @@
 *, ::before, ::after{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html {
     font-size: 62.5%;
 }
 body {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-family: 'DM Sans', sans-serif;
+    width: 100%;
 
 }
 header {
@@ -17,6 +19,8 @@ header {
 }
 header h1{
     text-align: center;
+    color: rgb(59, 91, 177);
+    margin-bottom: 1.5em;
 }
 .header-flex {
     display: flex;
@@ -34,23 +38,25 @@ header h1{
     width: 95%;
     height: 95%;
 }
-.first-row, .second-row {
-    display: flex;
-    justify-content: center;
+.manager {
+    display: grid;
+    grid-template-columns: auto auto auto;
     text-align: center;
-}
-.first-row p, .second-row p {
-    margin-top: 0.6em;
-}
-.second-row {
+    margin: 0 auto;
     margin-top: 5em;
-}
-.first-row {
-    margin-top: 4em;
+    gap: 0;
+    width: 90%;
+    
 }
 .pic {
-    width: 70%;
-    height: 80%;
+    /* width: 70%;
+    height: 80%; */
+    min-width: 10px;
+    min-width: 10px;
+    max-width: 250px;
+    max-height: 250px;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
 main {
     margin-top: 10em;
@@ -59,6 +65,52 @@ main {
 main .leading {
     text-align: center;
 }
-main .leading  h2 {
+main .leading  h1 {
     margin-bottom: 2em;
+    color: rgb(59, 91, 177);
+}
+.leading p {
+    font-size: 1.8rem;
+}
+.title {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+@media screen and (max-width: 868px) {
+    .header-flex {
+        flex-direction: column;
+    }
+    .header-img {
+        margin-top: 2em;
+        margin-left: 0em;
+    }
+    .manager {
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: center;
+        margin-top: 5em;
+        gap: 0;
+    }
+    .pic{
+        width: 200px;
+        height: 200px;
+    }
+
+    @media screen and (max-width: 500px) {
+         .pic {
+        width: 150px;
+        height: 150px;
+         }
+    
+
+    }
+    @media screen and (max-width:332px){
+        .manager {
+            display: block;
+        }
+        
+    }
+    
+    
+    
 }
