@@ -232,12 +232,11 @@ nav {
 
 /* how container  */
 
-.how-container {}
 
 .hows {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  column-gap: 30px;
+  gap: 30px;
   margin-top: 36px;
   font-family: 'DM Sans', sans-serif;
 }
@@ -245,6 +244,8 @@ nav {
 .how {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+  /* align-items: flex-end; */
   position: relative;
 }
 
@@ -270,7 +271,7 @@ nav {
 }
 
 .how-top img {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   width: 100%;
 }
 
@@ -283,6 +284,7 @@ nav {
 .how-desc h3 {
   font-size: 32px;
   margin-bottom: 8px;
+  color: rgb(59, 91, 177);
 }
 
 .how-desc p {
@@ -305,7 +307,6 @@ nav {
 .faq-title {
   padding: 16px;
   background-color: #E0DCFF;
-
 }
 
 .faq-desc {
@@ -322,6 +323,7 @@ nav {
 /* contact  */
 .contact-container {
   display: flex;
+  flex-direction: row;
   margin-top: 100px;
   margin-bottom: 189px;
   font-family: 'DM Sans', sans-serif;
@@ -408,13 +410,10 @@ nav {
 .footer-top {
   display: flex;
   flex-direction: row;
+  width: 100%;
   align-items: flex-start;
 }
 
-.first h2 {
-  font-size: 32px;
-  color: black;
-}
 
 .first p {
   margin-top: 24px;
@@ -531,6 +530,7 @@ nav {
 
   .section-title {
     font-size: 25px;
+    text-align: center;
   }
 
   .features {
@@ -546,7 +546,9 @@ nav {
     font-size: 21px;
   }
 
-
+  .faq-container {
+    margin-top: 71px;
+}
 
   .why-container {
     padding-top: 71px;
@@ -585,29 +587,136 @@ nav {
   }
 
   .used-section {
-    margin-top: 0px;
-    /* width: 100vw; */
+    padding: 40px 0;
+    background-color: #EBECEE;
+    margin-top: 50px;
   }
 
   .used-container {
+    justify-content: center;
+    margin-top: 0px;
     flex-wrap: wrap;
     text-align: center;
   }
 
   .users {
     margin-top: 30px;
-    justify-content: center;
+    margin-bottom: 30px;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
     gap: 24px 48px;
+    align-items: center;
   }
 
   .user {
     width: 30%;
+    flex-wrap: wrap;
+  }
+
+  .faq-group {
+    text-align: center;
+  }
+
+  .how-container {
+    margin-top: 25px;
+  }
+
+  .hows {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin-top: 16px;
+    gap: 45px;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .how-top {
+    height: 328px;
+    margin-bottom: 4px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .contact-left {
+    height: 400px;
+  }
+
+  .contact-right h2 {
+    /* visibility: hidden; */
+    font-size: 21px;
+  }
+
+  .contact-right p {
+    font-size: 15px;
+  }
+
+  .form-group {
+    text-align: left;
+  }
+
+  .footer-container {
+    padding: 80px 20px;
+  }
+
+  .footer-logo {
+    height: 24px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    column-gap: 52px;
+  }
+
+
+  .tagline {
+    font-size: 11px;
+  }
+
+  .column {
+    margin-right: 0px;
+    max-width: 290px;
   }
 
   .user img {
     width: 100%;
   }
 
+
+  .column-heading {
+    font-size: 15px;
+    margin-bottom: 16px;
+    /* color: #575757; */
+  }
+
+  .column p {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .second,
+  .third {
+    width: 40%;
+  }
+
+
+
+  .footer-bottom {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .footer-bottom p {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .footer-bottom p img {
+    margin-left: 10px;
+  }
 }
