@@ -28,10 +28,12 @@ nav {
   justify-content: space-between;
 }
 
-.logo-text {
-  font-family: 'Inter', sans-serif;
-  font-size: 32px;
-  font-weight: 500;
+.logo-container {
+  height: 45px;
+}
+
+.logo-container img {
+  height: 100%;
 }
 
 .nav-btn {
@@ -471,6 +473,9 @@ nav {
 
   }
 
+  .logo-container {
+    height: 23px;
+  }
 
   .nav-btn {
     display: none;
@@ -533,15 +538,21 @@ nav {
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 16px;
     margin-top: 24px;
+    padding-bottom: 17px;
+
   }
 
   .feature-title {
     font-size: 21px;
   }
 
-  .why-container,
   .faq-container {
     margin-top: 71px;
+}
+
+  .why-container {
+    padding-top: 71px;
+    padding-bottom: 81px;
   }
 
   .why {
@@ -583,6 +594,8 @@ nav {
 
   .used-container {
     justify-content: center;
+    margin-top: 0px;
+    flex-wrap: wrap;
     text-align: center;
   }
 
@@ -592,7 +605,7 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px 48px;
-    /* margin: 0 30px; */
+    align-items: center;
   }
 
   .user {
@@ -666,6 +679,10 @@ nav {
   .column {
     margin-right: 0px;
     max-width: 290px;
+  }
+
+  .user img {
+    width: 100%;
   }
 
 

@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<!-- navbar can be added here -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faq Page</title>
+    <!-- Css Link -->
+    <link rel="stylesheet" href="{% static 'css/faq.css' %}" />
+  </head>
+
+  <body>
+    
+    {% include 'navbar.html' %}
+
+    <header>
+      <h1>FAQs</h1>
+      <p class="leading">Frequently Asked Questions.</p>
+      <p>Here are some common questions about ChunkFiles</p>
+    </header>
+    <!-- accordion question -->
+    <main>
+      <div class="accordion-container">
+        <div class="question">How are files split?</div>
+        <div class="answer">
+          <ul>
+            <li>
+              Step 1: Select the file format that you want eg. (.CSV, .JSON,
+              e.tc)
+            </li>
+            <li>
+              Step 2: Click on the “Upload File” button and select the desired
+              file from your device or fill in the web link to where the file is
+              located in the input box provided
+            </li>
+            <li>
+              Step 3: Select the number of rows that you want each file to have
+              (Optional)
+            </li>
+            <li>
+              Step 4: Click on the “Split File” button and wait for the
+              operation to finish and display the various files.
+            </li>
+            <li>
+              Step 5: Click on the “Download” button and save the zip file on
+              your device.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="accordion-container">
+        <div class="question">What is the file size limit?</div>
+        <div class="answer">The file size limit is 1GB</div>
+      </div>
+      <div class="accordion-container">
+        <div class="question">
+          Is this service paid? If yes what is<br />
+          the pricing
+        </div>
+        <div class="answer">The platform is free.</div>
+      </div>
+      <div class="accordion-container">
+        <div class="question">
+          Do I have to login to have access to<br />
+          my files?
+        </div>
+        <div class="answer">
+          Yes, you have to login in order to access your files.
+        </div>
+      </div>
+    </main>
+
+     {% include 'footer.html' %}
+    <script src="{% static 'js/faq.js' %}"></script>
+  </body>
+</html>

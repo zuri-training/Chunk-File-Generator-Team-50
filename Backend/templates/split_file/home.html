@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homepage</title>
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+        <!--Cookie sheet-->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+        <script src="{% static 'js/cookie.js' %}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>    
+    </head>
+    <body>
+            
+        {% include 'navbar_tools_and_home.html' %}
+
+        <!-- MAIN CONTAINER -->
+        <main>
+            <div class="welcome">Welcome back!</div>
+        
+            <h1 id="split-merge">Splitting and Merging Tools</h1>
+
+            <!-- Splitting and merging containers -->
+            <div>
+                <div class="split-cont">
+                    <a href="#">
+                        <img src="{% static 'images/scissors.svg' %}" alt="scissors image" class="split1" style="transform: rotateY(180deg);
+                                                                                                            background-color: #E2425C;">
+                        <div class="split2">
+                            <span style="font-size: 32px;
+                                        font-weight: 700;">Split
+                            </span><br> 
+                            <span style="font-size: 16px;">Split CSV</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="{% static 'images/scissors.svg' %}" alt="scissors image" class="split1" style="transform: rotateY(180deg);
+                                                                                                            background-color: #E2425C;">
+                        <div class="split2">
+                            <span style="font-size: 32px;
+                                        font-weight: 700;">Split
+                            </span><br> 
+                            <span style="font-size: 16px;">Split JSON</span>
+                        </div>
+                    </a>
+
+                    <!-- The merge block -->
+                    <a href="#">
+                        <img src="{% static 'images/merge-icon.svg' %}" alt="scissors image" class="split1">
+                        <div class="split2">
+                            <span style="font-size: 32px;
+                                        font-weight: 700;">Merge
+                            </span><br> 
+                            <span style="font-size: 16px;">Merge CSV</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="{% static 'images/merge-icon.svg' %}" alt="scissors image" class="split1">
+                        <div class="split2">
+                            <span style="font-size: 32px;font-weight: 700;">Merge</span><br> 
+                            <span style="font-size: 16px;">Merge JSON</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <h1>Converter Tools</h1>
+
+            <!-- The Convert Block -->
+            <div>
+                <div class="convert-cont">
+                    <a href="#">
+                        <img src="{% static 'images/convert-icon.svg' %}" alt="scissors image" class="split1-first">
+                        <div class="split2">
+                            <span style="font-size: 32px;font-weight: 700;">Convert</span><br> 
+                            <span style="font-size: 16px;">Excel to CSV</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="{% static 'images/convert-icon.svg' %}" alt="scissors image" class="split1-first">
+                        <div class="split2">
+                            <span style="font-size: 32px;
+                                        font-weight: 700;">Convert
+                            </span><br> 
+                            <span style="font-size: 16px;">Excel to JSON</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="{% static 'images/convert-icon.svg' %}" alt="scissors image" class="split1-second">
+                        <div class="split2">
+                            <span style="font-size: 32px;
+                                        font-weight: 700;">Convert
+                            </span><br> 
+                            <span style="font-size: 16px;">CSV to JSON</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="{% static 'images/convert-icon.svg' %}" alt="scissors image" class="split1-second">
+                        <div class="split2">
+                            <span style="font-size: 32px;
+                                        font-weight: 700;">Convert
+                            </span><br> 
+                            <span style="font-size: 16px;">JSON to CSV</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Video Tutorial Section -->
+            <h1>Video Tutorial</h1>
+            <div class="vid-cont">
+                <iframe src="https://youtube.com/embed/Wr4_yTOaTPk?controls=0playlist=Wr4_yTOaTPk"></iframe>
+                <div>Watch this video and learn how to split, convert and merge files with ease in this quick tutorial.</div>
+            </div>
+        </main>
+
+        {% include 'footer.html' %}
+    </body>
+</html>

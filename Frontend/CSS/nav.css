@@ -5,11 +5,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html {
+    font-size: 62.5%;
+}
 *,
 nav {
     font-family: 'DM Sans', sans-serif;
+    font-size: 1.8rem;
 
+}
+.fa-bars {
+    font-size: 2.5rem;
 }
 
 nav {
@@ -22,11 +28,11 @@ nav {
 
 }
 
-img {
+/* img {
     width: 130px;
     height: 40px;
 
-}
+} */
 
 .nav-logo {
     padding: 2em 1.2em 1em 1em;
@@ -63,7 +69,7 @@ nav a {
     cursor: pointer;
 }
 
-form {
+.dropdown form {
     padding: 0.3em;
     text-align: center;
 }
@@ -72,14 +78,18 @@ input {
     height: 35px;
     border-radius: 7px;
     background-image: url(../ASSETS/magnifying-glass-solid.svg);
-    background-position: 5% 10px;
+    background-position: 5% 12.5px;
     background-repeat: no-repeat;
     background-size: 15px;
     padding-left: 3em;
-    padding-top: 0.5em;
+    padding-top: 0.3em;
     border: 1px solid grey;
     background-color: rgb(240, 243, 249);
 
+}
+a.profile {
+    text-align: center;
+    margin: 0 auto 1em;
 }
 
 ::placeholder {
@@ -118,23 +128,32 @@ a.profile span{
     /* border: 1px solid red; */
     border-radius: 50%;
 }
-
-/* Large Screens styling */
-@media screen and (min-width: 600px) {
-    img {
-        width: 150px;
-        height: 40px;
-
-    }
+img {
+    width: 160px;
+    height: 50px;
 
 }
+#burger {
+    align-self: center;
+}
 
-@media screen and (min-width: 840px) {
+/* Large Screens styling */
+/* @media screen and (min-width: 600px) {
+   
+
+} */
+
+@media screen and (min-width: 992px) {
+    .nav-logo img {
+        width: 200px;
+        height: 50px;
+
+    }
     #burger {
         display: none;
     }
 
-    .active {
+    .navbar-nav .active {
         background-color: rgb(59, 91, 177);
         color: #fff;
 
@@ -175,7 +194,7 @@ a.profile span{
     }
 
     nav {
-        padding: 1.5em 0 1em 0;
+        padding: 1em 0 0.5em 0;
     }
 
     nav a {
@@ -189,6 +208,12 @@ a.profile span{
     .navbar-nav a {
         padding: 0.5em;
         border-radius: 7px;
+    }
+    #flex li{
+        align-self: center;
+    }
+    a.profile {
+        margin: 0;
     }
 
 
