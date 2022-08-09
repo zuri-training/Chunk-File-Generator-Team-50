@@ -1,0 +1,96 @@
+body{
+    padding: 0% 5% 300px 5%;
+}
+
+h1{
+
+padding-top: 217px;
+
+/*styleName: For web screen/Headline 2/Headline2 Med - 57;*/
+font-family: 'DM Sans';
+font-size: 57px;
+font-weight: 500;
+letter-spacing: 0em;
+text-align: center;
+
+
+color: #3B5BB1;
+}
+.services h2{
+padding-top: 27px;
+
+/* For web screen/For Title/Title Bold -32px */
+
+font-family: 'DM Sans';
+font-size: 32px;
+font-weight: 700;
+line-height: 45px;
+letter-spacing: 0em;
+text-align: left;
+
+/* or 45px */
+
+
+color: #353535;
+
+}
+.services p{
+
+padding-top: 19px;
+
+/* For web screen/For Title/Title Reg- 32px */
+
+font-family: 'DM Sans';
+font-size: 32px;
+font-weight: 400;
+line-height: 45px;
+letter-spacing: 0em;
+text-align: left;
+
+/* or 45px */
+
+
+color: #353535;
+
+    
+}
+
+
+.terms{
+    
+    padding-top: 20px;
+    border-radius: nullpx;    
+
+}
+
+.terms h2{
+    /*styleName: For web screen/For Title/Title Bold -32px;*/
+font-family: 'DM Sans';
+font-size: 32px;
+font-weight: 700;
+line-height: 45px;
+letter-spacing: 0em;
+text-align: left;
+color: #353535;
+
+}
+
+.terms p{
+
+/*styleName: For web screen/For Body/Body Reg - 20px;*/
+font-family: 'DM Sans';
+font-size: 20px;
+font-weight: 400;
+line-height: 32px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+/*styleName: For web screen/For Title/Title Reg- 32px;
+font-family: DM Sans;
+font-size: 32px;
+font-weight: 400;
+line-height: 45px;
+letter-spacing: 0em;
+text-align: left;*/
