@@ -105,13 +105,17 @@ main :nth-child(3) {
     border-radius: 4px;
 }
 
-.save {
+.save, .download {
     background-color: var(--blue);
     color: white;
 }
 
-.cancel {
+.cancel, .save-for-later {
     color: var(--black);
     border: 1px solid var(--blue);
     background-color: white;
+}
+
+.cancel-split {
+    border-radius: 16px;
 }
