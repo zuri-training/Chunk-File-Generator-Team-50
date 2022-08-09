@@ -67,6 +67,40 @@
   border-radius: 4px;
 }
 
+
+
+
+.container .progress-container .progress-bar {
+  position: relative;
+  width: 500px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: white;
+  /* box-shadow: 3px 4px 5px 0px rgba(204 185 185 / .75); */
+}
+
+.container .progress-container .progress-bar span {
+  position: absolute;
+  padding-right: 10px;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 3.4rem;
+  text-align: right;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #3B5BB1 50%, #3B5BB1 100%);
+  transition: width .5s linear;
+}
+
+
+
+
+
+
 .choose-file {
   padding: 15px 21px;
   background-color: #3B5BB1;
@@ -99,12 +133,6 @@
   height: 30px;
 }
 
-progress {
-  /* background-color: red; */
-  /* border-radius: 0px; */
-  color: red;
-  /* height: 100%; */
-}
 
 .split-contain {
   /* margin: 0px 92px; */
