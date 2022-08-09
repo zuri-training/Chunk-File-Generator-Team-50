@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@500&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+.split-section {
+  padding: 85px 100px 28px;
+}
+
+.container-top {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-top .right{
+  display: flex;
+  align-items: center;
+}
+
+.right .right-col{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+
+.right-col button{
+  height: 30px;
+  cursor: pointer;
+  margin-right: 4px;
+  border: none;
+}
+
+
+.right-col button img{
+  height: 100%;
+}
+
+
+.split-title {
+  font-size: 32px;
+}
+
+.main-split-container {
+  border: 1px solid #3B5BB1;
+  height: 500px;
+}
+
+.upload,
+.progress,
+.split,
+.splitting,
+.splitted,
+.result {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+}
+
+.choose-file {
+  padding: 15px 21px;
+  background-color: #3B5BB1;
+  margin-bottom: 40px;
+  border-radius: 4px;
+}
+
+.choose-file input {
+  color: white;
+  /* padding: ; */
+}
+
+.drag-file {
+  display: flex;
+  align-items: center;
+  border: 2px solid #3B5BB1;
+  font-size: 15px;
+  border-radius: 16px;
+}
+
+.drag-file input {
+  padding: 16px 55px;
+  border-radius: 16px;
+  border: none;
+}
+
+.drag-file::placeholder {}
+
+.drag-file img {
+  height: 30px;
+}
+
+progress {
+  /* background-color: red; */
+  /* border-radius: 0px; */
+  color: red;
+  /* height: 100%; */
+}
+
+.split-contain {
+  /* margin: 0px 92px; */
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #3C3C3C;
+
+  /* padding: 100px; */
+}
+
+.split-contain h2 {
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.split-contain p {
+  margin-bottom: 40px;
+}
+
+
+.split-setting {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.split-setting .left {
+  margin-right: 40px;
+}
+
+.split-setting label {
+  font-size: 20px;
+  color: #3C3C3C;
+}
+
+.split-setting input {
+  padding: 10px 33px;
+  border-radius: 16px;
+  border: 2px solid #3B5BB1;
+  width: 100px;
+  margin-left: 16px;
+}
+
+.split-contain button,
+.splitting button {
+  padding: 16px 97px;
+  font-size: 15px;
+  background-color: #3B5BB1;
+  border: none;
+  color: white;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+
+
+.splitting {
+  color: #3C3C3C;
+
+}
+
+.splitting h2,
+.splitting img {
+  margin-bottom: 80px;
+}
+
+.splitted p {
+  color: #3B5BB1;
+  margin: 48px;
+
+}
+
+.splitted .btn-group {
+  display: flex;
+
+}
+
+.btn-group button {
+  border-radius: 16px;
+  border: none;
+  font-size: 20px;
+
+}
+
+.btn-group .download {
+  margin-right: 60px;
+  background-color: #3B5BB1;
+  color: white;
+  padding: 22px 26px;
+}
+
+.btn-group .save {
+  border: 1px solid #3B5BB1;
+  padding: 22px 16px;
+}
+
+.rad-input {
+  height: 15px;
+  width: 15px;
+}
+
+.result label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.result label p {
+  padding: 16px;
+  background-color: #3B5BB1;
+  margin-left: 10px;
+  width: 400px;
+  border-radius: 4px;
+  color: white;
+}
+
+.result label button {
+  border: none;
+  cursor: pointer;
+
+}
+
+.result label .delete {
+  margin-right: 16px;
+  margin-left: 32px;
+}
