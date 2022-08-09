@@ -1,0 +1,236 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+    <link rel="stylesheet" href="{% static 'css/about.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/footer_nav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d1b29e8e1a.js" crossorigin="anonymous"></script>
+    <script src="{% static 'js/nav.js' %}"></script>
+</head>
+
+<body>
+   <!-- HEADER CONTAINER -->
+   <header>
+
+    
+    
+    
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="{% static 'images/header-logo1.svg' %}" alt="">
+                <div id="burger">
+                    <h2><i class="fa-solid fa-bars"></i></h2>
+                </div>
+            </div>
+            <div id="links" class="dropdown">
+                <ul class="navbar-nav">
+                    <li><a href="{% url 'split_file:split_home' %}" class="links">Home</a></li>
+                    <li><a href="{% url 'main:about' %}" class="links active">About Us</a></li>
+                    <li><a href="{% url 'main:faq' %}" class="links">FAQ</a></li>
+                    <li><a href="{% url 'main:contact' %}" class="links">Contact</a></li>
+    
+                </ul>
+            </div>
+    
+            
+            <div id="flex" class="dropdown">
+                <form>
+                    <input type="search" name="" id="" placeholder='Search'>
+                </form>
+                <ul>
+                    <li><a href="#"><i class="fa-regular fa-bell" style="color: rgb(59, 91, 177);"></i></a></li>
+                    <!-- profile -->
+                    <li><a href="#" class="profile">
+                            <!--profile-img added here -->
+                            <span class="bubble"><!--message no here -->8</span>
+                        </a></li>
+                    <!-- <i class="fa-solid fa-user"></i> -->
+                </ul>
+    
+            </div>
+            <!-- <div class="dropdown">
+    
+    
+                 rgb(59, 91, 177) 
+            </div> -->
+        </div>
+    </nav>
+</header> 
+
+    <!-- MAIN CONTAINER -->
+    <main>
+        <!-- THE FIRST SECTION -->
+        <section class="section">
+            <!-- THE FIRST SECTION HEADING -->
+            <h1 class="first-section-head">About Us</h1>
+            <!-- THE FIRST FLEX CONTAINER -->
+            <div class="flex-container-1">
+                <!-- THE FIRST FLEX ITEM -->
+                <div class="flex-item-left">
+                    <p class="pag">
+                        Chunk File provide helpful tools, that allow users split, merge and
+                        convert large CSV and JSON file into smaller chunk.(Chunk as much as
+                        300mb).
+                    </p>
+                    <p class="pag">
+                        We provide service that allows users save and download splited
+                        files.
+                    </p>
+                    <p class="pag">
+                        Our mission is to ensure users have a smooth and seamless
+                        experience, while splitting large files into smaller chunks, using
+                        our uniquely power platform.
+                    </p>
+                    <p class="pag">
+                        Import, Save and Download Your CSV And JSON files for free at
+                        anytime.
+                    </p>
+                </div>
+                <!-- THE SECOND FLEX ITEM -->
+                <div class="flex-item-right">
+                    <img src="{% static 'images/about.png' %}" alt="" />
+                </div>
+            </div>
+        </section>
+         <!-- THE SECOND SECTION -->
+        <section class="section">
+            <!-- THE SECOND SECTION HEADING -->
+            <h1 class="second-section-head">Meet The Team</h1>
+            <p class="p-meet">
+                We are passionate about creating solutions to help millions of people
+                with their document needs.
+            </p>
+            <!-- THE SECOND FLEX CONTAINER -->
+            <div class="flex-container-2">
+                <!-- THE LEFT FLEX ITEM -->
+                <div class="left-item">
+                    <figure>
+                        <img class="pic" src="{% static 'images/pic-1.png' %}" alt="" />
+                        <figcaption>
+                            <p class="fig">Tersoo Ahire David</p>
+                            <p class="fig">Founder & CEO</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img class="pic" src="{% static 'images/pic-4.png' %}" alt="" />
+                        <figcaption>
+                            <p class="fig">Yusuf Damilare</p>
+                            <p class="fig">Product Manager</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- THE MIDDLE FLEX ITEM -->
+                <div class="middle-item">
+                    <figure>
+                        <img class="pic" src="{% static 'images/pic-2.png' %}" alt="" />
+                        <figcaption>
+                            <p class="fig">Faith Oluwale</p>
+                            <p class="fig">Business Development</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img class="pic" src="{% static 'images/pic-5.png' %}" alt="" />
+                        <figcaption>
+                            <p class="fig">Itive Martha</p>
+                            <p class="fig">Graphic Designer</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- THE RIGHT FLEX ITEM -->
+                <div class="right-item">
+                    <figure class="nested-left-item">
+                        <img class="pic" src="{% static 'images/pic-3.png' %}" alt="" />
+                        <figcaption>
+                            <p class="fig">Adeyanju Hammed</p>
+                            <p class="fig">Marketing</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="nested-right-item">
+                        <img class="pic" src="{% static 'images/pic-6.png' %}" alt="" />
+                        <figcaption>
+                            <p class="fig">Ezugwu Lois</p>
+                            <p class="fig">Administration</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+        <!-- THE FOOTER -->
+        <footer class="footer-container">
+            <div class="footer-top">
+                <!-- column 1 -->
+                <div class="column first">
+                    <img class="footer-logo" src="{% static 'images/footer-logo.svg' %}" alt="Logo" />
+        
+                    <p class="tagline">Split your CSV and JSON files the easy way...</p>
+                    <div class="social">
+        
+                        <a href="#">
+                            <i class="fa fa-facebook" style="color: rgb(14, 36, 235); font-size:30px;"></i>
+                        </a>
+        
+                        <a href="#">
+                            <i class="fa fa-twitter" style="color: rgb(0, 140, 255); font-size:30px;"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa fa-github" style="color: rgb(23, 26, 29); font-size:30px;"></i>
+                        </a>
+        
+                    </div>
+                </div>
+        
+                <!-- column 2  -->
+                <div class="column second">
+                    <h2 class="column-heading">Product</h2>
+                    <p>App Integration</p>
+                    <p>Tools</p>
+                </div>
+        
+                <!-- column 3  -->
+                <div class="column third">
+                    <h2 class="column-heading">Company</h2>
+                    <p>Home</p>
+                    <p>About</p>
+                    <p>Support</p>
+                    <p>Privacy Policy</p>
+                    <p>Contact Us</p>
+                    <p>FAQ</p>
+                </div>
+        
+                <!-- column 4  -->
+                <div class="column fourth">
+                    <h2 class="column-heading">Tools</h2>
+                    <p>Split CSV</p>
+                    <p>Split JSON</p>
+                    <p>Convert CSV</p>
+                    <p>Convert JSON</p>
+                    <p>Merve CSV</p>
+                    <p>Merge JSON</p>
+                    <p>FAQ</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>&copy; 2022 ChunkFile. All rights reserved.</div>
+        
+                <p><span>12,000</span> Files splitted</p>
+            </div>
+        </footer>
+</body>
+
+</html>
+</body>
+
+</html>
