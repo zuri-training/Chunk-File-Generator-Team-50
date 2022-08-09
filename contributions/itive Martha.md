@@ -1,2 +1,1 @@
-I designed "the About Us website screen"with @loisezugwu and 
-2.also designed "About us  mobile screen": https://github.com/zuri-training/Chunk-File-Generator-Team-50.git
+I designed the Website page of the About us page with @Ezugwu Lois and I also contributed to the design of the Mobile screen of the same page with @Peculiarity   https://github.com/zuri-training/Chunk-File-Generator-Team-50.git
