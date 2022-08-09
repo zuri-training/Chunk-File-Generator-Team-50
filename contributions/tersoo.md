@@ -1,1 +1,12 @@
-ISSUES RESOLVED AND TASKS DONE
+TASKS DONE
+- Created email script. https://github.com/zuri-training/Chunk-File-Generator-Team-50/blob/main/Backend/scripts_project/email_script.py
+- Created README File. https://github.com/zuri-training/Chunk-File-Generator-Team-50/blob/main/README.md
+- Created documentation file. https://docs.google.com/document/d/1OLx95vQyBURK3B1Zm3YVDYYgzjjOc-QHojJPJieBv6k/edit#heading=h.x6yc3pa5daf7
+- Created database schema. https://dbdesigner.page.link/pGXxXxQnADhF5BfC8
+- Created Django Project and applications. https://github.com/zuri-training/Chunk-File-Generator-Team-50/commit/a74e6e7af9897a0cc80a842e6328fe3ca8d8c56b
+- Created 1st version of Script for splitting CSV Files. https://github.com/zuri-training/Chunk-File-Generator-Team-50/commit/ab200aaefe7df758d3955c6f33bb47e39d878fd5#diff-6da33bee15b5b158278804b946945add6b3d77333f1a14d5525a484c57d6d121
+- Implemented new design changes to the home page (1st Version) https://github.com/zuri-training/Chunk-File-Generator-Team-50/commit/cb36d7c95c0dd22ba084f2dccc5fa23735fe36a0
+- Implemented new design changes to the home page, navigation and footer (2nd Version) https://github.com/zuri-training/Chunk-File-Generator-Team-50/commit/2af967f0d6d5bfff2a0f0ca6a8b88f584dcee640 
+- Implemented new design for tools on the home page. https://github.com/zuri-training/Chunk-File-Generator-Team-50/commit/3e660e3d19747979a768ed877de1517133bcd23a
+- Merged pull request for making the landing page responsive. https://github.com/zuri-training/Chunk-File-Generator-Team-50/commit/a6b18a2678fa364dd71b759be2cd0834c0552fea
+- Made changes to user authentication and added logout link on tools page. https://github.com/zuri-training/Chunk-File-Generator-Team-50/commit/b8a2a75b1b9daf77ead47cd136c5bd920009275e
