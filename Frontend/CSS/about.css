@@ -415,7 +415,7 @@ body, html {
     flex: 33.33%;
     text-align: center;
   }
-  .pic{
+  .pic {
     height: 50%;
     width: 100%;
     border-radius: 100%;
@@ -455,7 +455,6 @@ body, html {
     text-align: center;
         }
     }
-<<<<<<< HEAD
 
     /* THE FOOTER */
 
@@ -516,6 +515,3 @@ footer div > img {
     height: 24px;
 }
   }
-=======
-    
->>>>>>> 311ccb5ad759e70b33f4494e20d6c337e663d49d
