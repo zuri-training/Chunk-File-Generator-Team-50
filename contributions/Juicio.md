@@ -1,6 +1,6 @@
 ## My Contributions
 
-** Made Navbar  ** - https://github.com/zuri-training/Chunk-File-Generator-Team-50/blob/main/Frontend/HTML/navbar.html
+** Made Navbar  - https://github.com/zuri-training/Chunk-File-Generator-Team-50/blob/main/Frontend/HTML/navbar.html
 
 ** Fixed Footer ** - https://github.com/zuri-training/Chunk-File-Generator-Team-50/blob/main/Frontend/HTML/footer.html
 
