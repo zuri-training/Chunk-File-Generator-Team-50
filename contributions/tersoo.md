@@ -10,3 +10,4 @@ TASKS DONE
 - Implemented new design for tools on the home page. https://github.com/zuri-training/Chunk-File-Generator-Team-50/commit/3e660e3d19747979a768ed877de1517133bcd23a
 - Merged pull request for making the landing page responsive. https://github.com/zuri-training/Chunk-File-Generator-Team-50/commit/a6b18a2678fa364dd71b759be2cd0834c0552fea
 - Made changes to user authentication and added logout link on tools page. https://github.com/zuri-training/Chunk-File-Generator-Team-50/commit/b8a2a75b1b9daf77ead47cd136c5bd920009275e
+- Created Desktop version for privacy policy page. https://github.com/zuri-training/Chunk-File-Generator-Team-50/commit/ed894fedb1ddab5ba270f4f77ad3c650b5488dfb
