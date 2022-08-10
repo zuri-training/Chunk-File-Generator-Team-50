@@ -176,3 +176,60 @@ input[type="number"] {
     border-radius: 5px;
     background-color: var(--blue);
 }
+
+
+/* Saved Files Section */
+
+.my-files {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.del-download-all {
+    display: flex;
+    height: 46px;
+    gap: 10px;
+}
+
+.del-download-all img {
+    cursor: pointer;
+}
+
+.saved-files {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+    width: 70%;
+}
+
+input[name="saved-files"] {
+    height: 40px;
+    width: 40px;
+    outline: var(--blue);
+}
+
+.select-file {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 65%;
+}
+
+.select-file .file {
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: left;
+    color: white;
+    background-color: var(--blue);
+}
+
+
+.saved-files img {
+    height: 40px;
+    cursor: pointer;
+}

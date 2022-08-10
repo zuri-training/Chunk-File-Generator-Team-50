@@ -53,12 +53,18 @@ section {
 .img-and-logo {
     height: 100vh;
     width: 40rem;
-    background-color: #E7CEF0;
+    background-color: #97B6D9;
     display: flex;
     flex-direction: column;
     gap: 5rem;
     margin-top: 0;
     padding-top: 0;
+}
+
+.logo {
+    margin-top: 20px;
+    margin-left: 50px;
+
 }
 
 .mobile-logo{
@@ -67,7 +73,8 @@ section {
 
 .img {
     height:70vh;
-    width: 35rem;
+    width: 30rem;
+    margin-left: 50px;
 
 }
 
@@ -158,6 +165,7 @@ button {
     display: flex;
     justify-content: center;
     font-family: 'DM Sans', sans-serif;
+    margin-top: 20px;
 }
 
 .reg {
@@ -165,6 +173,7 @@ button {
     color: #30638E;
     font-weight: 900;
     margin-left: 3px;
+    align-self: center;
 }
 
 
