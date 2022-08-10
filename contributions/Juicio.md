@@ -15,5 +15,4 @@
          - *Faq js*- https://github.com/zuri-training/Chunk-File-Generator-Team-50/blob/main/Frontend/JAVASCRIPT/faq.js
 
 ***Fixed About Us Page*** - https://github.com/zuri-training/Chunk-File-Generator-Team-50/blob/main/Frontend/HTML/aboutus.html
-
-          - *about us css*- https://github.com/zuri-training/Chunk-File-Generator-Team-50/blob/main/Frontend/CSS/about.css
+ - *about us css*- https://github.com/zuri-training/Chunk-File-Generator-Team-50/blob/main/Frontend/CSS/about.css
