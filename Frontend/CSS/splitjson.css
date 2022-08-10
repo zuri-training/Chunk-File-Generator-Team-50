@@ -109,6 +109,12 @@ main :nth-child(3) {
     border-radius: 4px;
 }
 
+.btn:hover {
+    background-color: #3E8DE3;
+    color: white;
+    border: 1px solid transparent;
+}
+
 .save, .download {
     background-color: var(--blue);
     color: white;
