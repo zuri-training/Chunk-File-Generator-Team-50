@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin: 0 0 0 15%;
+    margin: 0 10% 0 10%;
     font-family: 'DM Sans', sans-serif;
 }
 
@@ -52,4 +52,10 @@ p {
 
 .text-sec-9 {
     margin-bottom: 100px;
+}
+
+@media (max-width:475px) {
+    .header {
+        font-size: 1.5rem;
+    }
 }
