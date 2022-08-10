@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-body {
+.body {
     display: flex;
     gap: 120px;
 }
@@ -52,8 +52,8 @@ section {
 /* IMAGE */
 .img-and-logo {
     height: 100vh;
-    width: 30rem;
-    background-color: #E7CEF0;
+    width: 40rem;
+    background-color: #97B6D9;
     display: flex;
     flex-direction: column;
     gap: 5rem;
@@ -61,9 +61,21 @@ section {
     padding-top: 0;
 }
 
+.logo {
+    margin-top: 20px;
+    margin-left: 50px;
+
+}
+
+.mobile-logo{
+    display: none;
+}
+
 .img {
-    height:50vh;
-    width: 35rem;
+    height:70vh;
+    width: 30rem;
+    margin-left: 50px;
+
 }
 
 /* FORM */
@@ -110,7 +122,6 @@ input {
     justify-content: right;
     text-decoration: none;
     color: black;
-    /* padding-right: 12px; */
     font-family: 'DM Sans', sans-serif;
     margin-top: 10px;
 
@@ -154,6 +165,7 @@ button {
     display: flex;
     justify-content: center;
     font-family: 'DM Sans', sans-serif;
+    margin-top: 20px;
 }
 
 .reg {
@@ -161,17 +173,147 @@ button {
     color: #30638E;
     font-weight: 900;
     margin-left: 3px;
+    align-self: center;
 }
 
 
-.icons{
+.button-section {
     display: flex;
-    gap: 50px;
-    justify-content: center;
-    margin: 20px 0;
+    gap: 30px;
+    font-family: 'DM Sans', sans-serif;
 }
 
-.icn {
-    height: 35px;
-    width: 35px;
+.sign-up-btn1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    width: 12rem;
+    background-color: white;
+}
+
+.sign-up-btn{
+    display: flex;
+    gap: 10px;
+    margin: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+}
+
+.ggle {
+    background-color: #EEF1FA
+
+}
+
+.fb {
+    background-color: #3183BE;
+
+}
+
+@media (max-width: 1076px) {
+    .body {
+        width: 100%;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .img-and-logo {
+        width: 30rem;
+        height: 100%;
+    }
+
+    .img {
+        width: 30rem;
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    body {
+        width: 100%;
+        gap: 0;
+    }
+
+    section .img-and-logo {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .body {
+        width: 100%;
+        gap: 0;
+    }
+
+    section .img-and-logo {
+        display: none;
+    }
+
+    .form-section {
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+    }
+
+    input, .btn-2 {
+        width: 80vw;
+    }
+
+    .forgotten-password {
+        justify-content: flex-end;
+        width: 80vw;
+    }
+
+    .button-section {
+        width: 80vw;
+        margin-top: 30px;
+    }
+
+    .sign-in-header h1{
+        font-size: 2.3rem;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    .header-text {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .header-sub-text{
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .footer p, .reg {
+        font-size: 0.8rem;
+        margin-top: 30px;
+    }
+
+    .reg {
+        font-weight: 500;
+    }
+
+    .mobile-logo {
+        display: block;
+    }
 }

@@ -9,6 +9,9 @@ def split_home(request):
 
 @login_required(login_url="accounts:login")
 def split_csv(request):
+    if request.method == 'POST':
+        uploaded_file = request.FILES['csv_file']
+        #print uploaded_file size and name
     return render(request, 'split_file/splitcsv.html')
 
 @login_required(login_url="accounts:login")

@@ -10,8 +10,8 @@ def AboutUs(request):
 def FaQ(request):
     return render(request, "main/faq.html")
 
-def documentation(request):
-    return render(request, "main/documentation.html")
+def contact(request):
+    return render(request, "main/contact_us.html")
 
 def policy(request):
     return render(request, "main/privacypolicy.html")

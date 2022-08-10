@@ -6,7 +6,7 @@ urlpatterns = [
     path("", views.index, name="index"),
     path("about/", views.AboutUs, name="about"),
     path("faq/", views.FaQ, name="faq"),
-    path("documentation/", views.documentation, name="documentation"),
+    path("contact/", views.contact, name="contact"),
     path('policy/', views.policy, name='policy'),
     ]
 #if settings.DEBUG:

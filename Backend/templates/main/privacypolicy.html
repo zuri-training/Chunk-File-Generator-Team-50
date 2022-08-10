@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,17 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy</title>
-    <link rel="stylesheet" href="style.css">
     <!-- Google Fonts Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!--CSS link -->
-    <link rel="stylesheet" href="../CSS/privacy.css">
+    <link rel="stylesheet" href="{% static 'css/privacy.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
     <!-- google fonts link -->
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    {% include 'navbar.html' %}
     <header>
         <h1>Privacy Policy</h1>
         <div class="leads">
@@ -103,7 +105,7 @@
         </section>
 
     </main>
-
+{% include 'footer.html' %}
 </body>
 
 </html>

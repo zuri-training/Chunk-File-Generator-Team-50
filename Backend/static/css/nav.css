@@ -5,11 +5,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html {
+    font-size: 62.5%;
+}
 *,
 nav {
     font-family: 'DM Sans', sans-serif;
+    font-size: 1.8rem;
 
+}
+.fa-bars {
+    font-size: 2.5rem;
 }
 
 nav {
@@ -62,7 +68,7 @@ nav a {
     cursor: pointer;
 }
 
-form {
+.dropdown form {
     padding: 0.3em;
     text-align: center;
 }
@@ -70,12 +76,12 @@ form {
 input {
     height: 35px;
     border-radius: 7px;
-    background-image: url(magnifying-glass-solid.svg);
+    background-image: url(../ASSETS/magnifying-glass-solid.svg);
     background-position: 5% 12.5px;
     background-repeat: no-repeat;
     background-size: 15px;
     padding-left: 3em;
-    padding-top: 0.5em;
+    padding-top: 0.3em;
     border: 1px solid grey;
     background-color: rgb(240, 243, 249);
 
@@ -136,7 +142,7 @@ img {
 } */
 
 @media screen and (min-width: 992px) {
-    img {
+    .nav-logo img {
         width: 200px;
         height: 50px;
 
@@ -145,7 +151,7 @@ img {
         display: none;
     }
 
-    .active {
+    .navbar-nav .active {
         background-color: rgb(59, 91, 177);
         color: #fff;
 
