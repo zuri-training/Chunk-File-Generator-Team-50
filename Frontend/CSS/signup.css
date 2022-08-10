@@ -56,7 +56,7 @@ header {
 .img-and-logo {
     height: 100vh;
     width: 40rem;
-    background-color: #BFD9F6;
+    background-color: #97B6D9;
     border-radius: 0 25px 0 0;
     padding-top: 30px;
 
@@ -64,11 +64,17 @@ header {
 
 .image-section {
     margin-top: 70px;
+    
+}
+
+.logo {
+    margin-left: 50px;
 }
 
 .img {
     height:70vh;
-    width: 35rem;
+    width: 30rem;
+    margin-left: 50px;
 }
 
 
@@ -231,7 +237,9 @@ button a:hover {
 
     .img-and-logo {
         height: 100%;
-        width: 27rem;
+        width: 35rem;
+        gap: 100px;
+        height: 100vh;
     }
 
     .img {
