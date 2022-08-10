@@ -48,6 +48,9 @@ textarea {
     background: rgb(59, 91, 177);
     color: #ffffff;
 }
+.btn:hover {
+  cursor: pointer;
+}
 @media screen and (max-width: 868px) {
   .container {
     width: 85%;
