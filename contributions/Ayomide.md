@@ -1,1 +1,1 @@
-
+I was in charge of the overall visual direction and UX process that was undertaken in the project phase, giving guides to team members and making sure we made the interface easy to navigate and also user friendly.
