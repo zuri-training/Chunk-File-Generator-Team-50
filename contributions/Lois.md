@@ -11,3 +11,6 @@ I personally designed the "Privacy policy" website page and mobile screen with a
 
 
 I made a little contribution to the "Sign up/In page" The original designers being @damifetsruby and @blissrollins : https://www.figma.com/file/RH1nJ2LaKUYYayO9TjcUIg/Team-50-Chunk-Files-(Copy)?node-id=299%3A93
+
+
+I designed the "profile page" mobile screen: https://www.figma.com/file/RH1nJ2LaKUYYayO9TjcUIg/Team-50-Chunk-Files-(Copy)?node-id=2630%3A37962
