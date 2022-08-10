@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,8 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact us</title>
-    <link rel="stylesheet" href="{% static 'css/contact_us.css' %}" />
+    <title>Contact Us</title>
     <link rel="stylesheet" href="{% static 'css/contact_us.css' %}" />
     <link rel="stylesheet" href="{% static 'css/nav.css' %}">
     <link rel="stylesheet" href="{% static 'css/footer_nav.css' %}">
@@ -29,27 +27,52 @@
 
 <body>
     {% include 'navbar.html' %}
-    <div class="container__text">
-        <h1>Contact Us</h1>
-        <p>
-            If you have any question, just fill in the contact form, and we will
-            answer you shortly.
-        </p>
-    </div>
-    <div class="container">
-    <div class="container__form">
-        <form action="">
-            <label for="FName">Full Name</label>
-            <input type="text" name="name" placeholder="Enter your full name" required />
-            <label for="Email">Email Address</label>
-            <input type="email" name="email" placeholder="Enter your email address" required />
-            <label for="message">Message/Feedback</label>
-            <textarea name="message" rows="7" placeholder="Enter your message here" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-    </div>
-   </div>
-{% include 'footer.html' %}
+    <section>
+        <div class="container contact-container">
+            <div class="contact-left">
+                <img src="{% static 'images/247.svg' %}" alt="" />
+            </div>
+
+            <div class="contact-right">
+                <h2>Get in touch</h2>
+                <p>
+                    Have an inquiry or feedback for us? Kindly fill the form to reach
+                    out to us.
+                </p>
+
+                <form method="POST" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Full name" />
+                    </div>
+
+                    <div class="form-group">
+                        <input
+                            type="email"
+                            placeholder="Email Address"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message"></label>
+                        <textarea
+                            name=""
+                            id=""
+                            cols="30"
+                            rows="10"
+                            placeholder="Enter your message here"
+                        ></textarea>
+                    </div>
+
+                    <button>Get in touch</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+  {% include 'footer.html' %}
+  <script src="{% static 'js/nav.js' %}"></script>
+    <script src="{% static 'js/cookie.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 </body>
 
 </html>
