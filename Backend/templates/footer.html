@@ -36,12 +36,12 @@
         <!-- column 3  -->
         <div class="column third">
             <h2 class="column-heading">Company</h2>
-            <p>Home</p>
-            <p>About</p>
+            <p><a style="text-decoration: none;color:white;" href="{% url 'split_file:split_home' %}" >Home</a></p>
+            <p><a style="text-decoration: none;color:white;" href="{% url 'main:about' %}" >About</a></p>
             <p><a style="text-decoration: none;color:white;" href="{% url 'main:terms' %}" >Terms and Conditions</a></p>
             <p><a style="text-decoration: none;color:white;"  href="{% url 'main:policy' %}" >Privacy Policy</a></p>
-            <p>Contact Us</p>
-            <p>FAQ</p>
+            <p><a style="text-decoration: none;color:white;" href="{% url 'main:contact' %}" >Contact Us</a></p>
+            <p><a style="text-decoration: none;color:white;" href="{% url 'main:faq' %}" >FAQ</a></p>
         </div>
 
         <!-- column 4  -->
@@ -53,7 +53,6 @@
             <p>Convert JSON</p>
             <p>Merge CSV</p>
             <p>Merge JSON</p>
-            <p>FAQ</p>
         </div>
     </div>
     <div class="footer-bottom">
