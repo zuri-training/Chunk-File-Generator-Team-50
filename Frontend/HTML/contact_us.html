@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="{% static 'css/contact_us.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer_nav.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d1b29e8e1a.js" crossorigin="anonymous"></script>
+    
+
+    <!--Cookie sheet-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"
+    />
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+    <section>
+        <div class="container contact-container">
+            <div class="contact-left">
+                <img src="{% static 'images/247.svg' %}" alt="" />
+            </div>
+
+            <div class="contact-right">
+                <h2>Get in touch</h2>
+                <p>
+                    Have an inquiry or feedback for us? Kindly fill the form to reach
+                    out to us.
+                </p>
+
+                <form method="POST" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Full name" />
+                    </div>
+
+                    <div class="form-group">
+                        <input
+                            type="email"
+                            placeholder="Email Address"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message"></label>
+                        <textarea
+                            name=""
+                            id=""
+                            cols="30"
+                            rows="10"
+                            placeholder="Enter your message here"
+                        ></textarea>
+                    </div>
+
+                    <button>Get in touch</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+  {% include 'footer.html' %}
+  <script src="{% static 'js/nav.js' %}"></script>
+    <script src="{% static 'js/cookie.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+</body>
+
+</html>
