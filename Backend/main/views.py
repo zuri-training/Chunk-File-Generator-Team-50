@@ -15,3 +15,6 @@ def contact(request):
 
 def policy(request):
     return render(request, "main/privacypolicy.html")
+
+def terms(request):
+    return render(request, "main/termsandconditions.html")
