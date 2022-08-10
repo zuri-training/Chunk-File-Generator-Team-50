@@ -1,17 +1,16 @@
 /* FORM STYLES */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Merriweather:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 .container {
   margin: auto;
   margin-bottom: 15rem;
   width: 38%;
-  font-family: "DM Sans", sans-serif;
+font-family: 'DM Sans', sans-serif;
 }
 .container__text h1 {
   text-align: center;
   font-weight: 700;
-  font-size: 3rem;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   color: rgb(59, 91, 177);
   margin-top: 12rem;
   margin-bottom: 1.5rem;
@@ -19,8 +18,8 @@
 .container__text p {
   text-align: center;
   width: 38%;
-  font-family: "DM Sans", sans-serif;
-  font-size: 2rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.0rem;
   margin: 0 auto 3rem auto;
 }
 
@@ -41,19 +40,22 @@ textarea {
   color: white;
 }
 .btn {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  border: none;
-  width: 200px;
-  height: 30px;
-  background: rgb(59, 91, 177);
-  color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    border: none;
+    width: 150px;
+    height: 30px; 
+    background: rgb(59, 91, 177);
+    color: #ffffff;
+}
+.btn:hover {
+  cursor: pointer;
 }
 @media screen and (max-width: 868px) {
   .container {
     width: 85%;
   }
-  .container__text p {
+  .container__text p{
     width: 55%;
   }
 }
