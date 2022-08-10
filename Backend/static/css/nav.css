@@ -12,6 +12,7 @@ html {
 nav {
     font-family: 'DM Sans', sans-serif;
     font-size: 1.8rem;
+    z-index: 1;
 
 }
 .fa-bars {
