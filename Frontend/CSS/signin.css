@@ -222,16 +222,16 @@ a {
 
 }
 
-@media (max-width: 1076px) {
+@media (max-width: 1300px) {
     .body {
-        width: 100%;
         justify-content: center;
         gap: 50px;
+        width: 100%;
     }
 
-    .img-and-logo {
-        width: 30rem;
-        height: 100%;
+    .img-and-logo, .section {
+        width: 100%;
+        height: 100vh;
     }
 
     .img {
@@ -247,13 +247,14 @@ a {
         gap: 0;
     }
 
-    section .img-and-logo {
+    .section, .img-and-logo {
         display: none;
     }
 
     .mobile-logo {
         display: block;
     }
+
     
 }
 
