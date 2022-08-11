@@ -14,3 +14,12 @@ I made a little contribution to the "Sign up/In page" The original designers bei
 
 
 I designed the "profile page" mobile screen: https://www.figma.com/file/RH1nJ2LaKUYYayO9TjcUIg/Team-50-Chunk-Files-(Copy)?node-id=2630%3A37962
+
+
+I contributed to the design of the "merging mobile screen page": https://www.figma.com/file/RH1nJ2LaKUYYayO9TjcUIg/Team-50-Chunk-Files-(Copy)?node-id=1132%3A1198
+
+
+I contributed to the design of the "split CSV mobile screen page" : https://www.figma.com/file/RH1nJ2LaKUYYayO9TjcUIg/Team-50-Chunk-Files-(Copy)?node-id=431%3A149
+
+
+I contributed to the design of the "split JSON mobile screen page" : https://www.figma.com/file/RH1nJ2LaKUYYayO9TjcUIg/Team-50-Chunk-Files-(Copy)?node-id=431%3A150
