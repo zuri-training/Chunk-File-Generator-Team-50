@@ -14,6 +14,8 @@ Conversion page https://www.figma.com/file/RH1nJ2LaKUYYayO9TjcUIg/Team-50-Chunk-
 
 and Merging page https://www.figma.com/file/RH1nJ2LaKUYYayO9TjcUIg/Team-50-Chunk-Files-(Copy)?node-id=1132%3A1198
 
-I also worked with @Lois and @Peculiar in making the features screens responsive by designing the mobile screens for each page, starting with the Mobile web screens for the Split CSV pagehttps://www.figma.com/file/RH1nJ2LaKUYYayO9TjcUIg/Team-50-Chunk-Files-(Copy)?node-id=431%3A149 
+I also worked with @Lois and @Peculiar in making the features screens responsive by designing the mobile screens for each page, starting with the Mobile web screens for the Split CSV page https://www.figma.com/file/RH1nJ2LaKUYYayO9TjcUIg/Team-50-Chunk-Files-(Copy)?node-id=431%3A149 
 
-Mobile Web Screens for Split JSON 
+Mobile Web Screens for Split JSON https://www.figma.com/file/RH1nJ2LaKUYYayO9TjcUIg/Team-50-Chunk-Files-(Copy)?node-id=431%3A150
+
+Mobile Web Screens for Merging Page 
