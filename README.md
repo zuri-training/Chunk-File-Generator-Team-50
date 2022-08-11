@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="300" height="100" src="https://github.com/zuri-training/Chunk-File-Generator-Team-50/blob/main/Frontend/ASSETS/header-logo1.svg">
+</p>
+
 # Chunk File Project
 
 # Documentation
