@@ -16,3 +16,7 @@
 
 ***Fixed About Us Page*** - https://github.com/zuri-training/Chunk-File-Generator-Team-50/blob/main/Frontend/HTML/aboutus.html
  - *about us css*- https://github.com/zuri-training/Chunk-File-Generator-Team-50/blob/main/Frontend/CSS/about.css
+ 
+ ***Made Dashboard Page*** - https://github.com/zuri-training/Chunk-File-Generator-Team-50/blob/main/Frontend/HTML/profile_screen.html
+ - *Dashboard Css*-   https://github.com/zuri-training/Chunk-File-Generator-Team-50/blob/main/Frontend/CSS/profile_screen.css
+ - *Dashboard js*-    https://github.com/zuri-training/Chunk-File-Generator-Team-50/blob/main/Frontend/JAVASCRIPT/profile_screen.js
