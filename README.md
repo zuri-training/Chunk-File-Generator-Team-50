@@ -31,12 +31,24 @@ Chunk Files is an online platform that allows individuals to upload large CSV or
 - Database: SQLite.
 
 # Key Features
-- Home page.
 - Landing page.
-- Contact us page
+<img src="https://user-images.githubusercontent.com/105145697/184249078-51d4ab1c-b96a-4956-9428-bca76a6fed18.png" width="600" height="300">
+<p align="right">
+<img src="https://user-images.githubusercontent.com/105145697/184249716-f88f04fe-6acd-41f0-8b21-f462234c1554.png" width="600" height="300">
+</p>
+
+
+- Home page.
+<img src="https://user-images.githubusercontent.com/105145697/184247657-67a31b0f-fc07-462e-a370-b13e720675fe.png" width="600" height="300">
+
 - Sign in and sign up page.
+<p align="center">"<img src="https://user-images.githubusercontent.com/105145697/184250277-14b8d3bb-f906-47e0-a8ce-340492dc48f6.png" width="600" height="300"></p>
+<img src="https://user-images.githubusercontent.com/105145697/184249296-5aa1b993-a701-4492-ab89-cf859f7cea31.png" width="600" height="300">
+
 - Tools page containing; csv and json splitter and other file converters.
+
 - Terms of service page.
+
 - Privacy policy page.
 
 # Project Status
