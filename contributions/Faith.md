@@ -18,4 +18,4 @@ I also worked with @Lois and @Peculiar in making the features screens responsive
 
 Mobile Web Screens for Split JSON https://www.figma.com/file/RH1nJ2LaKUYYayO9TjcUIg/Team-50-Chunk-Files-(Copy)?node-id=431%3A150
 
-Mobile Web Screens for Merging Page 
+Mobile Web Screens for Merging Page https://www.figma.com/file/RH1nJ2LaKUYYayO9TjcUIg/Team-50-Chunk-Files-(Copy)?node-id=1132%3A1198
