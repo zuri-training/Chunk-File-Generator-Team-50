@@ -22,8 +22,11 @@
 > ## Created authentcation system for django project
 > [Backend/accounts/urls.py](https://github.com/zuri-training/Chunk-File-Generator-Team-50/commit/2f2dfaee07f7594c829203f2b5a7deee3742dd7c#diff-658bc2790be602665b9e96e5ded20ae59b9f79bcaac814792bc03943c1a69ecc)
 
-> ## Check out the contributors for this project
-> https://github.com/zuri-training/Chunk-File-Generator-Team-50/graphs/contributors
-
 > ## Updated the README.md
 > https://github.com/zuri-training/Chunk-File-Generator-Team-50/commit/fb3fb5f3704d21ae3b2c14ffdf504b600df52097
+
+> ## My Commit history
+> https://github.com/zuri-training/Chunk-File-Generator-Team-50/commits?author=carnage999-max
+
+> ## Check out the contributors for this project
+> https://github.com/zuri-training/Chunk-File-Generator-Team-50/graphs/contributors
