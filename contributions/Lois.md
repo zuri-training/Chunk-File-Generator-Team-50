@@ -15,3 +15,5 @@ I contributed to the design of the "merging mobile screen page": https://www.fig
 I contributed to the design of the "split CSV mobile screen page" : https://www.figma.com/file/RH1nJ2LaKUYYayO9TjcUIg/Team-50-Chunk-Files-(Copy)?node-id=431%3A149
 
 I contributed to the design of the "split JSON mobile screen page" : https://www.figma.com/file/RH1nJ2LaKUYYayO9TjcUIg/Team-50-Chunk-Files-(Copy)?node-id=431%3A150
+
+I contributed to the design of the "Conversion mobile screen page" : https://www.figma.com/file/RH1nJ2LaKUYYayO9TjcUIg/Team-50-Chunk-Files-(Copy)?node-id=912%3A1038

@@ -1,102 +1,98 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% static 'css/signin.css' %}" />
-    <title>Sign In</title>
-  </head>
 
-  <body>
-    <div class="mobile-logo">
-      <img src="{% static 'images/default-1.png' %}" alt="logo" />
-    </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/signin.css' %}">
+  <title>Sign In</title>
+</head>
 
-    <div class="body">
-      <section>
-        <div class="img-and-logo">
-          <div class="logo">
-            <img src="{% static 'images/chunkfile hi logo.png' %}" alt="logo" />
-          </div>
-          <div class="image-section">
-            <img src="{% static 'images/pana.png' %}" alt="img" class="img" />
-          </div>
-        </div>
-      </section>
+<body>
 
-      <div class="form-section">
-        <div class="sign-in-header">
-          <h1>Sign In</h1>
-        </div>
-        <header>
-          <p class="header-text">Hello Again!</p>
-          <p class="header-sub-text">Welcome back, you've been missed!</p>
-        </header>
-        <p>{% for message in messages %} {{ message }} {% endfor %}</p>
+  <div class="mobile-logo">
+    <img src="{% static 'images/default-1.png' %}" alt="logo">
+  </div>
 
-        <form action="#" method="POST">
-          {% csrf_token %}
-          <label for="username">Username</label>
-          <input type="text" name="username" />
-          <label for="password">Password</label>
+  <div class="body">
+    <section>
+      <div class="img-and-logo">
 
-          <input
-            type="password"
-            name="password"
-            id="password"
-            required
-            placeholder="Enter Password"
-          />
-          <a href="#" class="forgotten-password"> Forgot Password? </a>
-
-          <button
-            type="submit"
-            class="btn-2"
-            value="submit"
-            type="submit"
-            style="cursor: pointer"
-          >
-            Log In
-          </button>
-        </form>
-
-        <div class="form-bottom-text">
-          <p class="line"></p>
-          <p class="cont">Or continue with</p>
-          <p class="line"></p>
+        <div class="logo">
+          <img src="{% static 'images/chunkfile hi logo.png' %}" alt="logo">
         </div>
 
-        <div class="button-section">
-          <button class="sign-up-btn1 fb">
-            <a href="#" class="sign-up-btn">
-              <img
-                src="{% static 'images/Facebook logo.png' %}"
-                alt="fb"
-                class="icon"
-              />
-              Facebook
-            </a>
-          </button>
-
-          <button class="sign-up-btn1 ggle">
-            <a href="#" class="sign-up-btn">
-              <img
-                src="{% static 'images/Google logo.png' %}"
-                alt="google"
-                class="icon"
-              />
-              Google
-            </a>
-          </button>
+        <div class="image-section">
+          <img src="{% static 'images/pana.png' %}" alt="img" class="img">
         </div>
 
-        <div class="footer">
-          <p>Don't have an account yet?</p>
-          <a href="{% url 'accounts:register' %}" class="reg">Register</a>
-        </div>
       </div>
+    </section>
+
+    <div class="form-section">
+
+      <div class="sign-in-header">
+        <h1>Sign In</h1>
+      </div>
+
+      <header>
+        <p class="header-text">Hello Again!</p>
+        <p class="header-sub-text">Welcome back, you've been missed!</p>
+      </header>
+
+      <p>{% for message in messages %} {{ message }} {% endfor %}</p>
+
+      <form action="#" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" required placeholder="Enter Username">
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required placeholder="Enter Password">
+
+        <a href="#" class="forgotten-password"> Forgot Password? </a>
+
+        <button type="submit" class="btn-2" value="submit" type="submit" style="cursor: pointer">
+          Log In
+        </button>
+
+      </form>
+
+      <div class="form-bottom-text">
+        <p class="line"></p>
+        <p class="cont">Or continue with</p>
+        <p class="line"></p>
+      </div>
+
+      <div class="button-section">
+        
+        <button class="sign-up-btn1 fb">
+          <a href="#" class="sign-up-btn">
+            <img src="{% static 'images/Facebook logo.png' %}" alt="fb" class="icon" />
+            Facebook
+          </a>
+        </button>
+
+        <button class="sign-up-btn1 ggle">
+          <a href="#" class="sign-up-btn">
+            <img src="{% static 'images/Google logo.png' %}" alt="google" class="icon" />
+            Google
+          </a>
+        </button>
+
+      </div>
+
+      <div class="footer">
+        <p>Don't have an account yet?</p>
+        <a href="{% url 'accounts:register' %}" class="reg">Register</a>
+      </div>
+      
     </div>
-  </body>
+  </div>
+
+</body>
+
 </html>

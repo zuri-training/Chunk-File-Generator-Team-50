@@ -18,29 +18,35 @@
 
 
 <body>
+
     <section class="side-1">
         <div class="img-and-logo">
+            
             <div>
-                <img src="{% static 'images/default-1.png' %}" alt="logo" class="logo">
+                <img src="{% static 'images/chunkfile hi logo.png' %}" alt="logo" class="logo">
             </div>
+
             <div class="image-section">
-                <img src="{% static 'images/image-5.png' %}" alt="img" class="img">
+                <img src="{% static 'images/amico.png' %}" alt="img" class="img">
             </div>
+
         </div>
     </section>
 
+    <div class="mobile-logo">
+        <img src="{% static 'images/default 1.png' %}" alt="logo" class="logo">
+    </div>
+
     <section class="form-and-image-section">
         <div class="form-section">
-            <div>
-                <h1>
-                    Create An Account
-                </h1>
-                <p class="form-text">
-                    One account for everything split, and more
-                </p>
+
+            <div class="form-section-sub">
+                <h1>Create An Account</h1>
+                <p class="form-text"> One account for everything split, and more</p>
             </div>
 
             <div class="button-section">
+
                 <button class="sign-up-btn1">
                     <a href="#" class="sign-up-btn">
                         <img src="{% static 'images/Google logo.png' %}" alt="google" class="icon">
@@ -54,6 +60,7 @@
                         Sign up with Facebook
                     </a>
                 </button>
+
             </div>
 
             <div class="form-bottom-text">
@@ -62,41 +69,59 @@
                 <p class="line"></p>
             </div>
 
-            <form action="#" method="POST">
+            <form action="#" method="POST" class="form" enctype="application/x-www-form-urlencoded">
                 {% csrf_token %}
-                <label for="username">
-                    Username
-                </label>
+                
+                <label for="username">Username</label>
                 {{form.username}}
-                <label for="email">
-                    Email Address
-                </label>
+                
+                <label for="email">Email Address</label>
                 {{form.email}}
-                <label for="password">
-                    Password
-                </label>
+
+                <label for="password">Password</label>
                 {{form.password1}}
-                <label for="password">
-                    Confirm password
-                </label>
+
+                <label for="password">Confirm password</label>
                 {{form.password2}}
+
                 <p class="ack-text">
                     By creating account, you agree to our <span> <a href="#" class="tnc-links">Terms</a></span> and have read and<br>
                     acknowledge our <span> <a href="{% url 'main:policy' %}" class="tnc-links">Privacy Statement</a> </span>
                 </p>
+
                 <p>
                     {% for message in messages %}
                         {{message}}
                     {% endfor %}
+
                     {{form.errors}}
                 </p>
-                <input type="submit" class="btn-3" value="Create account" type="submit" 
-                style="cursor: pointer;">
+
+                <button type="submit" class="btn-3" style="cursor: pointer;">
+                    Create account
+                </button>
 
                 <div class="foot-text">
                     <p>
                         Already have an account? <span> <a href="{% url 'accounts:login' %}"> Login </a> </span>
                     </p>
+                </div>
+
+                <div class="mobile-btn-sec">
+                    <button class="sign-up-btn1 ggle">
+                        <a href="#" class="sign-up-btn">
+                            <img src="../signin assets/Google logo.png" alt="google" class="icon">
+                            <p class="icon-text">Google</p>
+                        </a>
+                    </button>
+    
+                    <button class="sign-up-btn1 fb">
+                        <a href="#" class="sign-up-btn">
+                            <img src="../signin assets/Facebook logo.png" alt="fb" class="icon">
+                            <p class="icon-text">Facebook</p>
+                        </a>
+                    </button>
+                    
                 </div>
             </form>
         </div>
