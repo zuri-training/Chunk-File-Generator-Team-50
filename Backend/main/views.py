@@ -18,3 +18,6 @@ def policy(request):
 
 def terms(request):
     return render(request, "main/termsandconditions.html")
+
+def profile(request):
+    return render(request, "main/profile_screen.html")
