@@ -16,24 +16,23 @@
 			<section class="split-section">
 				<div class="container">
 
-					<div class="split second-split-container">
-                        <div class="split-contain">
-                            <h2>Split CSV FIle</h2>
-                            <p>Split into as many files as you want</p>
-                            <div class="split-setting">
-								<form method="post" enctype="multipart/form-data">
-									{% csrf_token %}
-                                	<div>
-                                    	<label for="line">Number of lines per file</label>
-                                    	<input type="text" placeholder="100" />
-                                	</div><br><br>
-                        
-                            		<button type="submit">Split CSV</button>
-								</form>
-							</div>
+					<h1 class="split-title">Upload CSV Files</h1>
 
-                        </div>
-                    </div>
+					<div class="main-split-container">
+						<form action="" method="post" enctype="multipart/form-data">
+							{% csrf_token %}
+							<div class="upload">
+								<div class="choose-file">
+									<input class="choose-file-input" type="file" name='csv_file' accept="csv"/>
+								</div>
+								<div class="drag-file">
+									<input class="drag-file-input" type="text" placeholder="or Drag file here" />
+									<img src="{% static 'images/drive.svg' %}" alt="drive" />
+								</div>
+								<button style="margin-top:25px; padding: 20px 40px; background-color:#3B5BB1; color:white; border-radius:10px;" type="submit">Upload</button>
+							</div>
+						</form>
+					</div>
 				</div><br><br><br>
 				<h1 class="split-title" style="text-align: center;">How it works</h1><br>
 				<div class="main-cont second-cont">

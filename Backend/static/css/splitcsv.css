@@ -1,8 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@500&display=swap');
 
+.my-files {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.del-download-all {
+  display: flex;
+  height: 46px;
+  gap: 10px;
+}
+
+.my-files {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.del-download-all {
+  display: flex;
+  height: 46px;
+  gap: 10px;
+}
+
+.del-download-all img {
+  cursor: pointer;
+}
+
+.saved-files {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+  width: 70%;
+}
+
+input[name="saved-files"] {
+  height: 40px;
+  width: 40px;
+  outline: var(--blue);
+}
+
+.select-file {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 65%;
+}
+
+.select-file .file {
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: left;
+  color: white;
+  background-color: var(--blue);
+}
+
+#file {
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: left;
+  color: white;
+  background-color: #3B5BB1;
+  border: 1px solid #3B5BB1;
+}
+
+
+.saved-files img {
+  height: 40px;
+  cursor: pointer;
+}
+
 body {
   margin-top: 130px;
 }
+
+
 .main-cont {
   display: flex;
   flex-direction: column;
@@ -116,6 +195,11 @@ main {
   border-radius: 4px;
 }
 
+.second-split-container {
+  border: 1px solid #3B5BB1;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
 
 
 

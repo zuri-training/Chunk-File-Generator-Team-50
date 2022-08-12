@@ -17,22 +17,14 @@
 				<div class="container">
 
 					<div class="split second-split-container">
-                        <div class="split-contain">
-                            <h2>Split CSV FIle</h2>
-                            <p>Split into as many files as you want</p>
-                            <div class="split-setting">
-								<form method="post" enctype="multipart/form-data">
-									{% csrf_token %}
-                                	<div>
-                                    	<label for="line">Number of lines per file</label>
-                                    	<input type="text" placeholder="100" />
-                                	</div><br><br>
-                        
-                            		<button type="submit">Split CSV</button>
-								</form>
+                        <div class="splitted">
+							<h2>Your file has been splited successfully</h2>
+							<p>sample_csv.zip</p>
+							<div class="btn-group">
+								<button class="download">Download</button>
+								<button class="save"><a style="text-decoration: none; color:black;" href = "{% url 'split_file:savecsv' %}">Save for later</a></button>
 							</div>
-
-                        </div>
+						</div>
                     </div>
 				</div><br><br><br>
 				<h1 class="split-title" style="text-align: center;">How it works</h1><br>
