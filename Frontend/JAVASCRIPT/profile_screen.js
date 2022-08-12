@@ -63,7 +63,7 @@ let bs = document.getElementsByClassName('.save');
 
 for (let i = 0; i < deleted.length; i++) {
     deleted[i].addEventListener('click',function () {
-        files[i].style.display = 'none';
+        files[i].remove();
         
     })
     console.log(deleted[i]);
@@ -72,7 +72,7 @@ for (let i = 0; i < deleted.length; i++) {
 for (i=0; i<saved.length; i++) {
     saved[i].addEventListener('click',function () {
         this.style.backgroundColor = 'rgb(178, 218, 153)';
-        this.classList.add('saved');
+        this.setAttribute('id');
 
     });
     console.log(saved);
