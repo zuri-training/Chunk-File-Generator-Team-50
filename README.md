@@ -5,11 +5,11 @@
 # Chunk File Project
 
 # Documentation
-- [Figma Board](https://www.figma.com/file/HDodbxGZGTlpZFJKqWSV2C/Chunk-File_-Team-50?node-id=431%3A150)
+- <b> [Figma Board](https://www.figma.com/file/HDodbxGZGTlpZFJKqWSV2C/Chunk-File_-Team-50?node-id=431%3A150) </b>
 
-- [Database Schema](https://dbdesigner.page.link/pGXxXxQnADhF5BfC8)
+- <b> [Database Schema](https://dbdesigner.page.link/pGXxXxQnADhF5BfC8)</b>
 
-- [Extensive Project documenation](https://docs.google.com/document/d/1OLx95vQyBURK3B1Zm3YVDYYgzjjOc-QHojJPJieBv6k/edit#heading=h.x6yc3pa5daf7)
+- <b> [Extensive Project documenation](https://docs.google.com/document/d/1OLx95vQyBURK3B1Zm3YVDYYgzjjOc-QHojJPJieBv6k/edit#heading=h.x6yc3pa5daf7)</b>
 
 # Introduction
 Chunk Files is an online platform that allows individuals to upload large CSV or JSON files and split the dataset in the uploaded CSV or JSON file into multiple files.
