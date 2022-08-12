@@ -2,36 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Merriweather:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 .container {
-  margin: auto;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 15rem;
   margin-bottom: 15rem;
-  width: 38%;
-font-family: 'DM Sans', sans-serif;
-}
-.container__text h1 {
-  text-align: center;
-  font-weight: 700;
   font-family: 'DM Sans', sans-serif;
-  color: rgb(59, 91, 177);
-  margin-top: 12rem;
-  margin-bottom: 1.5rem;
-}
-.container__text p {
-  text-align: center;
-  width: 38%;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 1.0rem;
-  margin: 0 auto 3rem auto;
-}
-
-form {
   display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
+  flex-direction: row;
 }
 
-input,
-textarea {
-  width: 100%;
+.contact-left{
+  width: 60%
+}
+
+.contact-right{
+  width: 40%;
+}
+
+input, textarea {
+  width: 80%;
   padding: 0.5rem;
   border-radius: 0.4rem;
   background: transparent;
@@ -39,23 +29,66 @@ textarea {
   resize: none;
   color: white;
 }
+
 .btn {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
+    padding: 15px;
     border: none;
-    width: 150px;
-    height: 30px; 
+    border-radius: 10px;
+    width: 70%;
     background: rgb(59, 91, 177);
     color: #ffffff;
 }
+
 .btn:hover {
   cursor: pointer;
 }
-@media screen and (max-width: 868px) {
+
+@media screen and (max-width: 480px) {
   .container {
-    width: 85%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
-  .container__text p{
-    width: 55%;
+  
+  .contact-left{
+    width: 100%
+  }
+  
+  .contact-right{
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    background: transparent;
+    border: 2px solid grey;
+    resize: none;
+    color: white;
+  }
+  .btn {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      width: 100%;
+      background: rgb(59, 91, 177);
+      color: #ffffff;
+  }
+
+  .img-mobile {
+    width: 100%;
   }
 }
