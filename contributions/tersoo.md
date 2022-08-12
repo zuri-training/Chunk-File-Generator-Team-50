@@ -13,3 +13,4 @@ TASKS DONE
 - Created Desktop version for privacy policy page. https://github.com/zuri-training/Chunk-File-Generator-Team-50/commit/ed894fedb1ddab5ba270f4f77ad3c650b5488dfb
 - Made the Contact Us page resposive for mobile screens. https://github.com/zuri-training/Chunk-File-Generator-Team-50/commit/4cf61634fe0ed95493c30fed90c292ce7f072dc5
 - Implemented profile screen page. https://github.com/zuri-training/Chunk-File-Generator-Team-50/commit/22c4e0db394245d84c972a5f4d9a244e17954616
+- Implemented new sub pages for the splitcsv tool https://github.com/zuri-training/Chunk-File-Generator-Team-50/commit/87f0de1c76373a3308cc22be650519260fb8b507
