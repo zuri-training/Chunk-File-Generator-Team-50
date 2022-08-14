@@ -89,3 +89,6 @@ Chunk Files is an online platform that allows individuals to upload large CSV or
   `git push origin  your-current-branch-name`
 
 10. Create a pull request to the main branch.
+
+# Server Details
+- https://docs.google.com/document/d/1Qt6Br4RqcLfSsQd4kjcoLHrL6gzsdPMmuIVBHGF7SYU/edit
