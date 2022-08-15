@@ -4,6 +4,8 @@
 
 # Chunk File Project
 
+- Visit the website by clicking this link http://chunkfile.pythonanywhere.com/
+
 # Documentation
 - <b> [Figma Board](https://www.figma.com/file/HDodbxGZGTlpZFJKqWSV2C/Chunk-File_-Team-50?node-id=431%3A150) </b>
 
