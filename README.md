@@ -31,6 +31,7 @@ Chunk Files is an online platform that allows individuals to upload large CSV or
 - Backend: Python and Django framework.
 - Design: Figma.
 - Database: SQLite.
+- Hosting Service: <a href="https://www.pythonanywhere.com/">Pythonanywhere</a>.
 
 # Key Features
 - Landing page.
