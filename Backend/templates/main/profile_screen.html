@@ -21,10 +21,8 @@
             <div class="none"><div id="slider-container" class=""><button class="slider"></button></div></div>
             <div class="profile-img">
                 <img class="profimg-container" src=" " alt="">
-                {% if request.user.is_authenticated %}
-                <p class="name">{{request.user.username}}</p>
-                {% endif %}
-                <p class="email">Email</p>
+                <p class="name">{{request.user}}</p>
+                <p class="email">{{user.email}}</p>
             </div>
         </div>
 
