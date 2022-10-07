@@ -1,29 +1,28 @@
 {% load static %}
 
-<!-- THE FOOTER -->
-<footer class="footer-container">
+
+ <!-- THE FOOTER -->
+ <footer class="footer-container">
     <div class="footer-top">
         <!-- column 1 -->
         <div class="column first">
-            <img class="footer-logo" src="{% static 'images/footer-logo.svg' %}" alt="" />
+            <img class="footer-logo" src="{% static 'images/footer-logo.svg' %}" alt="Logo" />
 
             <p class="tagline">Split your CSV and JSON files the easy way...</p>
             <div class="social">
+
                 <a href="#">
-                    <img src="{% static 'images/Facebook.png' %}" alt="" />
+                    <i class="fa fa-facebook" style="color: rgb(14, 36, 235); font-size:30px;"></i>
                 </a>
 
                 <a href="#">
-                    <img src="{% static 'images/Instagram.png' %}" alt="" />
+                    <i class="fa fa-twitter" style="color: rgb(0, 140, 255); font-size:30px;"></i>
                 </a>
 
                 <a href="#">
-                    <img src="{% static 'images/twitter.png' %}" alt="" />
+                    <i class="fa fa-github" style="color: rgb(23, 26, 29); font-size:30px;"></i>
                 </a>
 
-                <a href="#">
-                    <img src="{% static 'images/linkedin.png' %}" alt="" />
-                </a>
             </div>
         </div>
 
@@ -34,35 +33,31 @@
             <p>Tools</p>
         </div>
 
-        
-        <div class="mobile-flex">
-            <!-- column 3  -->
-            <div class="column third">
-                <h2 class="column-heading">Company</h2>
-                <p><a style="text-decoration: none;color:white;" href="{% url 'split_file:split_home' %}" >Home</a></p>
-                <p><a style="text-decoration: none;color:white;" href="{% url 'main:about' %}" >About</a></p>
-                <p><a style="text-decoration: none;color:white;" href="{% url 'main:terms' %}" >Terms and Conditions</a></p>
-                <p><a style="text-decoration: none;color:white;"  href="{% url 'main:policy' %}" >Privacy Policy</a></p>
-                <p><a style="text-decoration: none;color:white;" href="{% url 'main:contact' %}" >Contact Us</a></p>
-                <p><a style="text-decoration: none;color:white;" href="{% url 'main:faq' %}" >FAQ</a></p>
-            </div>
-            
-            <!-- column 4  -->
-            <div class="column fourth">
-                <h2 class="column-heading">Tools</h2>
-                <p><a style="text-decoration: none;color:white;" href="{% url 'split_file:uploadcsv' %}" >Split CSV</a></p>
-                <p>Split JSON</p>
-                <p>Convert CSV</p>
-                <p>Convert JSON</p>
-                <p>Merge CSV</p>
-                <p>Merge JSON</p>
-            </div>
+        <!-- column 3  -->
+        <div class="column third">
+            <h2 class="column-heading">Company</h2>
+            <p><a style="text-decoration: none;color:white;" href="{% url 'split_file:split_home' %}" >Home</a></p>
+            <p><a style="text-decoration: none;color:white;" href="{% url 'main:about' %}" >About</a></p>
+            <p><a style="text-decoration: none;color:white;" href="{% url 'main:terms' %}" >Terms and Conditions</a></p>
+            <p><a style="text-decoration: none;color:white;"  href="{% url 'main:policy' %}" >Privacy Policy</a></p>
+            <p><a style="text-decoration: none;color:white;" href="{% url 'main:contact' %}" >Contact Us</a></p>
+            <p><a style="text-decoration: none;color:white;" href="{% url 'main:faq' %}" >FAQ</a></p>
+        </div>
+
+        <!-- column 4  -->
+        <div class="column fourth">
+            <h2 class="column-heading">Tools</h2>
+            <p><a style="text-decoration: none;color:white;" href="{% url 'split_file:split_csv' %}" >Split CSV</a></p>
+            <p>Split JSON</p>
+            <p>Convert CSV</p>
+            <p>Convert JSON</p>
+            <p>Merge CSV</p>
+            <p>Merge JSON</p>
         </div>
     </div>
-
     <div class="footer-bottom">
         <div>&copy; 2022 ChunkFile. All rights reserved.</div>
 
-        <p><span>12,000</span> Files splitted <img class="last-img"src="{% static 'images/chunk hi icon.png' %}"></p>
+        <p><span>12,000</span> Files splitted</p>
     </div>
 </footer>

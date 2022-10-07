@@ -45,6 +45,3 @@ def registerPage(request):
                 
         context = {'form':form}
         return render(request, 'accounts/signup.html', context)
-
-def dashboard(request):
-    return render(request, 'accounts/profile_screen.html')

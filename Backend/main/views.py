@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
 
 def index(request):
     return render(request, "main/index.html")
@@ -17,6 +18,3 @@ def policy(request):
 
 def terms(request):
     return render(request, "main/termsandconditions.html")
-
-def profile(request):
-    return render(request, "main/profile_screen.html")

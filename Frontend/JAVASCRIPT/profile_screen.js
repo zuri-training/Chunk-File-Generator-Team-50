@@ -53,27 +53,3 @@ sliderC.addEventListener('click', function () {
    } 
 
 });
-
-
-let deleted = document.querySelectorAll('.delete');
-let saved = document.querySelectorAll('.save');
-let files = document.querySelectorAll('.files');
-let bs = document.getElementsByClassName('.save');
-
-
-for (let i = 0; i < deleted.length; i++) {
-    deleted[i].addEventListener('click',function () {
-        files[i].remove();
-        
-    })
-    console.log(deleted[i]);
-};
-
-for (i=0; i<saved.length; i++) {
-    saved[i].addEventListener('click',function () {
-        this.style.backgroundColor = 'rgb(178, 218, 153)';
-        this.setAttribute('id');
-
-    });
-    console.log(saved);
-}

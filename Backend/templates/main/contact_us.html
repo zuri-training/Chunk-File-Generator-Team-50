@@ -27,36 +27,47 @@
 
 <body>
     {% include 'navbar.html' %}
-    <div class="container">
+    <section>
+        <div class="container contact-container">
+            <div class="contact-left">
+                <img src="{% static 'images/247.svg' %}" alt="" />
+            </div>
 
-        <div class="contact-left">
-            <img class="img-mobile" src="{% static 'images/247.svg' %}" alt="" />
+            <div class="contact-right">
+                <h2>Get in touch</h2>
+                <p>
+                    Have an inquiry or feedback for us? Kindly fill the form to reach
+                    out to us.
+                </p>
+
+                <form method="POST" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Full name" />
+                    </div>
+
+                    <div class="form-group">
+                        <input
+                            type="email"
+                            placeholder="Email Address"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message"></label>
+                        <textarea
+                            name=""
+                            id=""
+                            cols="30"
+                            rows="10"
+                            placeholder="Enter your message here"
+                        ></textarea>
+                    </div>
+
+                    <button>Get in touch</button>
+                </form>
+            </div>
         </div>
-
-        <div class="contact-right">
-            <h1>Get in touch</h1>
-            <p>Have an inquiry or feedback for us? Kindly fill the form to reach out to us.</p><br>
-
-            <form method="POST" class="contact-form">
-                <div class="form-group">
-                    <input type="text" placeholder="Full name"/>
-                </div><br>
-
-                <div class="form-group">
-                    <input type="email" placeholder="Email Address"/>
-                </div><br>
-
-                <div class="form-group">
-                    <label for="message"></label>
-                    <textarea cols="80" rows="10" placeholder="Enter your message here"></textarea>
-                </div><br>
-
-                <button class="btn" >Get in touch</button>
-
-            </form>
-        </div>
-
-    </div>
+    </section>
 
   {% include 'footer.html' %}
   <script src="{% static 'js/nav.js' %}"></script>

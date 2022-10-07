@@ -12,7 +12,7 @@
         <div id="links" class="dropdown">
           <ul class="navbar-nav">
             <li>
-              <a href="{% url 'split_file:split_home' %}"
+              <a href="{% url 'split_file:split_home' %}" class="links active"
                 >Home</a
               >
             </li>
@@ -38,8 +38,9 @@
               ></a>
             </li>
             <!-- profile -->
+            <li><a href="{% url 'accounts:logout' %}">Log Out</a></li>
             <li>
-              <a href="{% url 'main:profile' %}" class="profile">
+              <a href="#" class="profile">
                 <!--profile-img added here -->
                 <span class="bubble"><!--message no here -->8</span>
               </a>
