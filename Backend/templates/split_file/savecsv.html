@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="{% static 'css/splitcsv.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/nav.css' %}">
+		<link rel="stylesheet" href="{% static 'css/footer_nav.css' %}">
+		<title>Split CSV</title>
+	</head>
+	<body>
+		{% include "navbar.html" %}
+		<main>
+			<section class="split-section">
+				<div class="container">
+
+					<div class="split second-split-container">
+                        <div class="main-cont">
+                            <h1 class="split-title">Chunkfile would like to save an item in your folder</h1>
+								<form method="post" enctype="multipart/form-data">
+								{% csrf_token %}
+									<p style="color: rgb(59, 91, 177); text-align:center">sample_csv.zip</p>
+									<div class="save-cancel-cont">
+                                	<button type="submit" style="margin-top:25px; padding: 20px 50px; background-color:#3B5BB1; color:white; border-radius:10px;"  class="btn save">Save</button>
+								</form>
+								<button style="margin-left:20px; margin-top:25px; padding: 20px 40px; background-color:#b13b3b; color:white; border-radius:10px;"  class="btn cancel">
+									<a style="text-decoration: none;color:white;" href="{% url 'split_file:split_home' %}" >Cancel</a>
+								</button>
+							</div>
+                        </div>
+                    </div>
+				</div><br><br><br>
+				<h1 class="split-title" style="text-align: center;">How it works</h1><br>
+				<div class="main-cont second-cont">
+					<div class="illustration-cont">
+						<img src="{% static 'images/upload.png' %}" alt="upload"><br>
+						<div class="illustration-texts">
+							<h1 class="split-title" >Upload File</h1>
+							<p>Get started by selecting a file from your PC, drive or you simply drag the file to upload</p>
+						</div>
+					</div>
+					<div class="illustration-cont">
+						<img src="{% static 'images/set parameters.png' %}" alt="upload"><br>
+						<div class="illustration-texts">
+							<h1 class="split-title" >Set Parameters</h1>
+							<p>Choose the desired size you wish to split to</p>
+						</div>
+					</div>
+					<div class="illustration-cont">
+						<img src="{% static 'images/download.png' %}" alt="upload"><br>
+						<div class="illustration-texts">
+							<h1 class="split-title" >Download</h1>
+							<p>Your files are ready to download, you can also save for later or to cloud</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		{% include "footer.html" %}
+	</body>
+</html>

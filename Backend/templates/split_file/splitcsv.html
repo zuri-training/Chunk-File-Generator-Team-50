@@ -6,79 +6,61 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="{% static 'css/splitcsv.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/nav.css' %}">
+		<link rel="stylesheet" href="{% static 'css/footer_nav.css' %}">
 		<title>Split CSV</title>
 	</head>
 	<body>
-		<header></header>
+		{% include "navbar.html" %}
 		<main>
 			<section class="split-section">
 				<div class="container">
-					<h2 class="split-title">Split CSV Files</h2>
-					<div class="main-split-container">
-						<form action="" method="post" enctype="multipart/form-data">
-							{% csrf_token %}
-							<div class="upload">
-							<div class="choose-file">
-								<input type="file" name='csv_file' accept="csv"/>
+
+					<div class="split second-split-container">
+                        <div class="split-contain">
+                            <h2>Split CSV FIle</h2>
+                            <p>Split into as many files as you want</p>
+                            <div class="split-setting">
+								<form method="post" enctype="multipart/form-data">
+									{% csrf_token %}
+                                	<div>
+                                    	<label for="line">Number of lines per file</label>
+                                    	<input type="text" placeholder="100" />
+                                	</div><br><br>
+                        
+                            		<button type="submit">Split CSV</button>
+								</form>
 							</div>
-							<div class="drag-file">
-								<input type="text" placeholder="or Drag file here" />
-								<img src="../../assets/drive.svg" alt="" />
-							</div>
+
+                        </div>
+                    </div>
+				</div><br><br><br>
+				<h1 class="split-title" style="text-align: center;">How it works</h1><br>
+				<div class="main-cont second-cont">
+					<div class="illustration-cont">
+						<img src="{% static 'images/upload.png' %}" alt="upload"><br>
+						<div class="illustration-texts">
+							<h1 class="split-title" >Upload File</h1>
+							<p>Get started by selecting a file from your PC, drive or you simply drag the file to upload</p>
 						</div>
-						</form>
-						 
-
-						<div class="progress">
-							<div class="progress-container">
-								<div class="progress-bar">
-									<span data-width="100%"></span>
-								</div>
-							</div>
+					</div>
+					<div class="illustration-cont">
+						<img src="{% static 'images/set parameters.png' %}" alt="upload"><br>
+						<div class="illustration-texts">
+							<h1 class="split-title" >Set Parameters</h1>
+							<p>Choose the desired size you wish to split to</p>
 						</div>
-
-
-						<div class="split">
-							<div class="split-contain">
-								<h2>Split CSV FIle</h2>
-								<p>Split into as many files as you want</p>
-								<div class="split-setting">
-									<div class="left">
-										<label for="size">Size of split files</label>
-										<input type="text" placeholder="5mb" />
-									</div>
-
-									<div>
-										<label for="line">Number of lines per file</label>
-										<input type="text" placeholder="100" />
-									</div>
-								</div>
-
-								<button>Split CSV</button>
-							</div>
-						</div>
-
-						<div class="splitting">
-							<h2>Splitting</h2>
-							<img src="../../assets/loading.svg" alt="" />
-							<button>Cancel</button>
-						</div>
-
-						<div class="splitted">
-							<h2>Your file has been splited successfully</h2>
-							<p>bodyguard_csv.zip</p>
-							<div class="btn-group">
-								<button class="download">Download</button>
-								<button class="save">Save for later</button>
-							</div>
+					</div>
+					<div class="illustration-cont">
+						<img src="{% static 'images/download.png' %}" alt="upload"><br>
+						<div class="illustration-texts">
+							<h1 class="split-title" >Download</h1>
+							<p>Your files are ready to download, you can also save for later or to cloud</p>
 						</div>
 					</div>
 				</div>
 			</section>
 		</main>
-
-		<footer></footer>
-
-		<script src="{% static 'js/progress.js' %}"></script>
+		{% include "footer.html" %}
 	</body>
 </html>

@@ -1,11 +1,17 @@
+<p align="center">
+  <img width="300" height="100" src="https://github.com/zuri-training/Chunk-File-Generator-Team-50/blob/main/Frontend/ASSETS/header-logo1.svg">
+</p>
+
 # Chunk File Project
 
+- Visit the website by clicking this link http://chunkfile.pythonanywhere.com/
+
 # Documentation
-- [Figma Board](https://www.figma.com/file/HDodbxGZGTlpZFJKqWSV2C/Chunk-File_-Team-50?node-id=431%3A150)
+- <b> [Figma Board](https://www.figma.com/file/HDodbxGZGTlpZFJKqWSV2C/Chunk-File_-Team-50?node-id=431%3A150) </b>
 
-- [Database Schema](https://dbdesigner.page.link/pGXxXxQnADhF5BfC8)
+- <b> [Database Schema](https://dbdesigner.page.link/pGXxXxQnADhF5BfC8)</b>
 
-- [Extensive Project documenation](https://docs.google.com/document/d/1OLx95vQyBURK3B1Zm3YVDYYgzjjOc-QHojJPJieBv6k/edit#heading=h.x6yc3pa5daf7)
+- <b> [Extensive Project documenation](https://docs.google.com/document/d/1OLx95vQyBURK3B1Zm3YVDYYgzjjOc-QHojJPJieBv6k/edit#heading=h.x6yc3pa5daf7)</b>
 
 # Introduction
 Chunk Files is an online platform that allows individuals to upload large CSV or JSON files and split the dataset in the uploaded CSV or JSON file into multiple files.
@@ -25,14 +31,27 @@ Chunk Files is an online platform that allows individuals to upload large CSV or
 - Backend: Python and Django framework.
 - Design: Figma.
 - Database: SQLite.
+- Hosting Service: <a href="https://www.pythonanywhere.com/">Pythonanywhere</a>.
 
 # Key Features
-- Home page.
 - Landing page.
-- Contact us page
+<img src="https://user-images.githubusercontent.com/105145697/184249078-51d4ab1c-b96a-4956-9428-bca76a6fed18.png" width="600" height="300">
+<p align="right">
+<img src="https://user-images.githubusercontent.com/105145697/184249716-f88f04fe-6acd-41f0-8b21-f462234c1554.png" width="600" height="300">
+</p>
+
+
+- Home page.
+<img src="https://user-images.githubusercontent.com/105145697/184247657-67a31b0f-fc07-462e-a370-b13e720675fe.png" width="600" height="300">
+
 - Sign in and sign up page.
+<p align="center">"<img src="https://user-images.githubusercontent.com/105145697/184250277-14b8d3bb-f906-47e0-a8ce-340492dc48f6.png" width="600" height="300"></p>
+<img src="https://user-images.githubusercontent.com/105145697/184249296-5aa1b993-a701-4492-ab89-cf859f7cea31.png" width="600" height="300">
+
 - Tools page containing; csv and json splitter and other file converters.
+
 - Terms of service page.
+
 - Privacy policy page.
 
 # Project Status

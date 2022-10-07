@@ -11,3 +11,6 @@ TASKS DONE
 - Merged pull request for making the landing page responsive. https://github.com/zuri-training/Chunk-File-Generator-Team-50/commit/a6b18a2678fa364dd71b759be2cd0834c0552fea
 - Made changes to user authentication and added logout link on tools page. https://github.com/zuri-training/Chunk-File-Generator-Team-50/commit/b8a2a75b1b9daf77ead47cd136c5bd920009275e
 - Created Desktop version for privacy policy page. https://github.com/zuri-training/Chunk-File-Generator-Team-50/commit/ed894fedb1ddab5ba270f4f77ad3c650b5488dfb
+- Made the Contact Us page resposive for mobile screens. https://github.com/zuri-training/Chunk-File-Generator-Team-50/commit/4cf61634fe0ed95493c30fed90c292ce7f072dc5
+- Implemented profile screen page. https://github.com/zuri-training/Chunk-File-Generator-Team-50/commit/22c4e0db394245d84c972a5f4d9a244e17954616
+- Implemented new sub pages for the splitcsv tool https://github.com/zuri-training/Chunk-File-Generator-Team-50/commit/87f0de1c76373a3308cc22be650519260fb8b507

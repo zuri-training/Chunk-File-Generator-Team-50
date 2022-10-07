@@ -8,8 +8,8 @@ urlpatterns = [
     path("faq/", views.FaQ, name="faq"),
     path("contact/", views.contact, name="contact"),
     path('policy/', views.policy, name='policy'),
-    path('policy/', views.policy, name='policy'),
     path('terms/', views.terms, name='terms'),
+    path('profile/', views.profile, name='profile'),
     ]
 #if settings.DEBUG:
     #creates a last urlpattern - with the media url, so, whatever path is in the media_url is made a url pattern

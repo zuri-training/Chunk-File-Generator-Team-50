@@ -6,6 +6,10 @@
 	<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/footer_nav.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
 	<!--Cookie consent-->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
@@ -20,11 +24,11 @@
 			<nav class="nav">
 				<!-- logo -->
 				<div class="logo-container">
-					<h1 class="logo-text">ChunkFile</h1>
+					<img src="{% static 'images/header-logo1.svg' %}" alt="Logo Image"/>
 				</div>
 				<div class="nav-btn">
 					<span class="btn sign-up">Hi, {{request.user}}</span>
-					<a href="" class="btn sign-up" style="text-decoration: none;"><span>Account <i class="fa fa-user"></i></span></a>
+					<a href="{% url 'main:profile' %}" class="btn sign-up" style="text-decoration: none;"><span>Account <i class="fa fa-user"></i></span></a>
 				</div>
 
 				<div class="bars">
@@ -35,7 +39,7 @@
 				<nav class="nav">
 					<!-- logo -->
 					<div class="logo-container">
-						<h1 class="logo-text">ChunkFile</h1>
+						<img src="{% static 'images/header-logo1.svg' %}" alt="Logo Image"/>
 					</div>
 					<div class="nav-btn">
 						<a href="{% url 'accounts:login' %}" class="btn sign-in" style="text-decoration: none;">Sign in</a>
@@ -106,7 +110,7 @@
 						<!-- user friendly  -->
 						<div class="why-reason">
 							<div class="why-head">
-								<img class="" src="" alt="" />
+								
 								<h3 class="why-title">User Friendly</h3>
 							</div>
 							<p class="why-desc">
@@ -120,7 +124,7 @@
 						<!-- secure -->
 						<div class="why-reason">
 							<div class="why-head">
-								<img class="" src="" alt="" />
+								
 								<h3 class="why-title">Secure</h3>
 							</div>
 							<p class="why-desc">
@@ -133,7 +137,7 @@
 						<!-- 100% Free  -->
 						<div class="why-reason">
 							<div class="why-head">
-								<img class="" src="" alt="" />
+								
 								<h3 class="why-title">100% Free</h3>
 							</div>
 							<p class="why-desc">
@@ -146,7 +150,7 @@
 						<!-- API Integration -->
 						<div class="why-reason">
 							<div class="why-head">
-								<img class="" src="" alt="" />
+								
 								<h3 class="why-title">API Integration</h3>
 							</div>
 							<p class="why-desc">
@@ -159,7 +163,7 @@
 						<!-- Online Sync -->
 						<div class="why-reason">
 							<div class="why-head">
-								<img src="" alt="" />
+								
 								<h3 class="why-title">Online Sync</h3>
 							</div>
 							<p class="why-desc">
@@ -172,7 +176,7 @@
 						<!-- 24/7 Support -->
 						<div class="why-reason">
 							<div class="why-head">
-								<img src="" alt="" />
+								
 								<h3 class="why-title">24/7 Support</h3>
 							</div>
 							<p class="why-desc">
